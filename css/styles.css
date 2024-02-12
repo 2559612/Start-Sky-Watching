@@ -4,12 +4,16 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
+/* MOBILE Layout */
+
 body {
 	font-family: 'Merriweather', serif;
 	margin: 0;
-	background-color: #eb0;
-}
+	background: url('../images/pexels-philippe-donn-1257860.jpg') no-repeat center center fixed;
+	/* file:///H:/Users/userid/desktop/f/pic.jpg */ 
+	}
 
+/* designing a specific element */
 #menuToggler {
 	position: fixed;
 	top: 0.5rem;
@@ -23,9 +27,13 @@ body {
 	z-index: 1;
 }
 
+main {
+	background-color: white;
+}
+
 nav {
 	position: fixed;
-  font-family: Merriweather, serif;
+    font-family: Merriweather, serif;
 	width: 100vw;
 	height: 100vh;
 	top: 0;
@@ -58,6 +66,26 @@ p {
 	margin: 1em auto;
 }
 
+footer {
+	display: flex;
+	flex-direction: row;
+	transform: none;
+	opacity: 1;
+	height: auto;
+	position: static;
+	justify-content: center;
+	position: fixed;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	background-color: rgba(236, 57, 57, 0.5);
+	color: white;
+	font-size: 3em;
+	text-align: left;
+	line-height: 1em;
+	padding: 0 1rem;
+	z-index: 2;
+  }
+
 /* TABLET AND DESKTOP STYLES */
 
 @media screen and (min-width: 515px) {
@@ -80,13 +108,13 @@ p {
 	}	
 
 
-nav a {
-  background-color: darkblue;
-  color: lightgray;
-  padding: 0.5em;
-  margin: 0.5em;
-  font-family: a;
-}
+	nav a {
+	background-color: darkblue;
+	color: lightgray;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: a;
+	}
 
 }
 
