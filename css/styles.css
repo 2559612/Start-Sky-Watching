@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 /* MOBILE AND GLOBAL STYLES */
 
 /* applies to screens smaller than 500px (first breakpoint) */
@@ -7,19 +7,36 @@
 /* MOBILE Layout */
 
 body {
-	font-family: 'Merriweather', serif;
 	margin: 0;
 	background: url('../images/pexels-philippe-donn-1257860.jpg') no-repeat center center fixed;
-	/* file:///H:/Users/userid/desktop/f/pic.jpg */ 
+	opacity: 0.8;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: hue;
+	
 	}
+
+#banner {
+	/* background: url('../images/pexels-philippe-donn-1257860.jpg') no-repeat center center fixed;
+	opacity: 0.85;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: hue; */
+	top: 100px;
+	font-family: "Merriweather", serif;
+	font-size: small;
+	color: white;
+	position: relative;
+	
+}
 
 /* designing a specific element */
 #menuToggler {
-	position: fixed;
+	position: absolute;
 	top: 0.5rem;
 	right: 0.5rem;
-	background-color: rgba(0,0,0,0.5);
-	color: white;
+	background-color: silver;
+	color: black;
 	font-size: 3em;
 	text-align: right;
 	line-height: 1em;
@@ -27,64 +44,88 @@ body {
 	z-index: 1;
 }
 
-main {
-	background-color: white;
-}
-
-nav {
+#menu {
 	position: fixed;
-    font-family: Merriweather, serif;
+    font-family: "Merriweather", serif;
+	font-weight: 700;
 	width: 100vw;
 	height: 100vh;
 	top: 0;
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(0,0,0,0.7);
+	background-color: silver;
 	opacity: 0;
 	transform: translateX(100vw);
+	cursor: pointer;
 	transition: transform 0.4s, opacity 0.6s;
+	z-index: 1;
+	text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white;
 }
 
-nav.open {
+#menu.open {
 	transition: transform 0.4s, opacity 0.2s;
 	transform: none;
 	opacity: 1;
 }
 
-nav a {
+#menu a {
 	font-size: 2em;
 	text-decoration: none;
 	padding: 0.5em 1em;
-	color: white;
+	color: black;
 	text-align: center;
 	flex-grow: 1;
+	position: relative;
+}
+
+#menu a:hover {
+	color: goldenrod;
+	transform: scale(1,1);
+	transition: all 0.3s ease-in-out;
 }
 
 p {
 	padding: 0 1em;
 	max-width: 600px;
 	margin: 1em auto;
+	line-height: 1em;
+	font-size: 3em;
 }
 
-footer {
+footer, #footer {
 	display: flex;
 	flex-direction: row;
-	transform: none;
-	opacity: 1;
-	height: auto;
-	position: static;
 	justify-content: center;
-	position: fixed;
-	bottom: 0.5rem;
-	right: 0.5rem;
-	background-color: rgba(236, 57, 57, 0.5);
+	opacity: 1;
+	height: 100px;
+	border-radius: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0; 	
+	background: #0c1445;
+	border-radius: 1%;
 	color: white;
-	font-size: 3em;
-	text-align: left;
-	line-height: 1em;
-	padding: 0 1rem;
-	z-index: 2;
+	font-size: 0.7em;
+	z-index: 3;
   }
+
+#footer a {
+	color: lightgray;
+	padding: 0.5em;
+	margin: 1, 4;
+	font-family: "Merriweather", serif;
+	font-weight: 700;
+	font-style: italic;
+	text-align: left;
+	font-size: large;
+}
+
+#footer a:hover {
+	color: goldenrod;
+	transform: scale(1,1);
+	transition: all 0.3s ease-in-out;
+}
 
 /* TABLET AND DESKTOP STYLES */
 
@@ -97,23 +138,30 @@ footer {
 		display: none;
 	}
 
-	nav {
+	#menu {
 		display: flex;
 		flex-direction: row;
+		flex-grow: initial;
+		margin: 4, 4;
 		transform: none;
 		opacity: 1;
 		height: auto;
-		position: static;
-		justify-content: center;
+		position: fixed;
+		gap: 0.1px;
+		top: 0;
+		background-color: transparent;
+		text-shadow: 1px 1px black, 1px -1px black, -1px 1px black, -1px -1px black;
 	}	
 
 
-	nav a {
-	background-color: darkblue;
-	color: lightgray;
-	padding: 0.5em;
-	margin: 0.5em;
-	font-family: a;
+	#menu a {
+	color: white;
+	padding: 1, 4;
+	margin: 1, 4;
+	font-family: Cochin;
+	font-size: x-large;
+	justify-content: right;
+	text-align: right;
 	}
 
 }
