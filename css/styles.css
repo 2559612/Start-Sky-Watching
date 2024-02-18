@@ -10,6 +10,7 @@
 /* QUESTIONS: Spacing: Two spcaebars or a tab? */
 /* any shortcut to indent properly? */
 /* Do we need to use the API? */
+/* Are there marks for user-input? */
 /* Debugging: the same code one after another works */
 
 body {
@@ -48,13 +49,14 @@ body {
 
 }
 
-#content {
+#about-content, #sky-watching-content {
   display: flex;
   flex: 3;
   flex-direction: column;
   box-sizing: border-box;
   border: 1px solid white;
-  justify-content: center;
+
+
   gap: 2em;
   width: 100%;
   margin-top: 3%;
@@ -63,6 +65,43 @@ body {
   text-wrap: wrap;
   font-size: small;
 }
+
+#step1, #step2, #step3 {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 15%;
+	box-sizing: border-box;
+	font-family: "Merriweather", serif;
+	font: 0.4rem "Merriweather", serif;
+	text-align: start;
+	/* why isn't the text aligning left? */
+}
+
+#step1pic, #step2pic, #step3pic {
+	display: flex;
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	background-color: beige;
+    background-size: cover; 
+    background-position: bottom;
+	border: 1px solid black;
+	border-radius: 15%;
+	box-sizing: border-box;
+
+}
+
+#step1pic {
+	height: 60%;
+	/* why not working? */
+	background-image: url("../images/look-at-the-sky.jpg");
+}
+
+
 
 #skills {
   display: flex;
@@ -73,6 +112,7 @@ body {
   background-color: beige;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-antoni-shkraba-4348405.jpg");
   background-size: cover; 
+  background-position: center;
   border: 1px solid #ccc;
   border-radius: 15%;
   box-sizing: border-box;
@@ -87,6 +127,7 @@ body {
   background-color: beige;
   background-image: url("../images/pexels-bo-ponomari-14720826.jpg");
   background-size: cover; 
+  background-position: center;
   border: 1px solid #ccc;
   border-radius: 15%;
   box-sizing: border-box;
@@ -103,6 +144,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-adrienn-1458283.jpg");
   /* background-image: url("../images/pexels-adrienn-1458283.jpg"); */
   background-size: cover;
+  background-position: center;
   background-color: #ddd;
   border: 1px solid #ccc;
   border-radius: 15%;
@@ -225,6 +267,7 @@ footer, #footer {
   
    #about {
 	  background-size: cover;
+	  background-position: center;
    }
 
 	#menuToggler {
@@ -266,7 +309,7 @@ footer, #footer {
 	position: relative;
 	}
 
-	#content {
+	#about-content {
 		display: flex;
 		flex: 3;
 		flex-direction: row;
