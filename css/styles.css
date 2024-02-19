@@ -41,7 +41,9 @@ body {
 
 
 #about {
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg") ;	
+	/* When the linear gradient is removed, the picture covers */
+	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg") ;	 */
+	background: url('../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg') no-repeat center center fixed;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -54,9 +56,8 @@ body {
   flex: 3;
   flex-direction: column;
   box-sizing: border-box;
-  border: 1px solid white;
-
-
+  /* only for designing purposes */
+  border: 2px solid grey;
   gap: 2em;
   width: 100%;
   margin-top: 3%;
@@ -72,11 +73,10 @@ body {
 	width: 80%;
 	height: 200px;
 	margin: 0 auto;
-	border: 1px solid #ccc;
+	border: 3px solid grey;
 	border-radius: 15%;
 	box-sizing: border-box;
-	font-family: "Merriweather", serif;
-	font: 0.4rem "Merriweather", serif;
+	font: 0.35rem "Merriweather", serif;
 	text-align: start;
 	/* why isn't the text aligning left? */
 }
@@ -89,7 +89,7 @@ body {
 	background-color: beige;
     background-size: cover; 
     background-position: bottom;
-	border: 1px solid black;
+	border: 5px solid black;
 	border-radius: 15%;
 	box-sizing: border-box;
 
@@ -97,8 +97,18 @@ body {
 
 #step1pic {
 	height: 60%;
-	/* why not working? */
 	background-image: url("../images/look-at-the-sky.jpg");
+}
+
+#step2pic {
+	height: 60%;
+	background-image: url("../images/clouds.jpg");
+}
+
+#step3pic {
+	height: 60%;
+	background-position: top;
+	background-image: url("../images/pexels-todd-trapani-1420440.jpg");
 }
 
 
@@ -161,7 +171,12 @@ body {
 	/* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
 	opacity: 1;
 	position: relative;
-	
+}
+
+#banner a{
+	font-style: italic;
+	font-size: 2.5rem;
+	color:bisque;
 }
 
 /* designing a specific element */
@@ -282,7 +297,7 @@ footer, #footer {
 		transform: none;
 		opacity: 1;
 		height: auto;
-		position: fixed;
+		position: relative;
 		gap: 0.1px;
 		top: 30px;
 		background: transparent;
@@ -299,17 +314,22 @@ footer, #footer {
 	}
 
 	#banner {
-	width: 80%;
-	margin: 20% auto;
-	font-family: "Merriweather", serif;
-	font-size: small;
-	color: white;
+	width: 90%;
+	margin: 15% auto;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 0.7rem;
+	font-weight: bold;
+	text-align: center;
+	color: silver;
 	/* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
 	opacity: 1;
 	position: relative;
+	box-sizing: border-box;
+	border-radius: 15%;
+	backdrop-filter: blur(1px);
 	}
 
-	#about-content {
+	#about-content, #sky-watching-content {
 		display: flex;
 		flex: 3;
 		flex-direction: row;
@@ -340,3 +360,60 @@ footer, #footer {
 }
 
 
+.slideshow {
+	width: 90%;
+	height: 250px;
+	/* top bottom right left */
+	margin:auto;
+	overflow: hidden;
+	position: relative;
+	box-sizing: border-box;
+	border: 5px solid white;
+	font-family: "Merriweather", serif;
+	font-size:0.6em;
+	color:bisque;
+	font-style: italic;
+	text-align: center;
+	backdrop-filter: blur(1px);
+  }
+  
+  .slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	animation: slideShow 12s infinite;
+	opacity: 0;
+	box-sizing: border-box;
+	border: 1px solid white;
+
+  }
+  
+  .slide:nth-child(1) {
+	animation-delay: 0s;
+  }
+  
+  .slide:nth-child(2) {
+	animation-delay: 4s;
+  }
+  
+  .slide:nth-child(3) {
+	animation-delay: 8s;
+  }
+
+  .slide:nth-child(4) {
+	animation-delay: 12s;
+  }
+  
+  @keyframes slideShow {
+	0% { opacity: 0; }
+	8% { opacity: 1; }
+	33% { opacity: 1; }
+	41% { opacity: 0; }
+	100% { opacity: 0; }
+  }
+  
+  button {
+	margin: 10px;
+	padding: 10px;
+	font-size: 16px;
+  }
