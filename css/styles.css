@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 /* MOBILE AND GLOBAL STYLES */
 
 /* applies to screens smaller than 500px (first breakpoint) */
@@ -37,8 +40,6 @@ body {
 	background-size: cover;
 	background-position: center;
 }
-
-
 
 #about {
 	/* When the linear gradient is removed, the picture covers */
@@ -164,20 +165,105 @@ body {
 #banner {
 	top: 15%;
 	width: 80%;
-	margin: 0 auto;
-	font-family: "Merriweather", serif;
-	font-size: small;
+	margin: 20% auto;
+	font-family: "Times New Roman", serif;
+	font-size: 0.5rem;
 	color: white;
-	/* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
+	text-align: center;
 	opacity: 1;
 	position: relative;
+	box-sizing: border-box;
+	border-top: 3px solid white;
+	border-bottom: 5px solid silver;
+	border-radius: 15%;
+	backdrop-filter: blur(1px);
 }
 
 #banner a{
-	font-style: italic;
-	font-size: 2.5rem;
-	color:bisque;
+	font-size: 1.6rem;
+	font-weight: bold;
+	width: 80%;
+	color:black;
+	font-family: 'Merriweather', serif;
+	background-color: bisque;
+	box-sizing: border-box;
+	border-top: 5px solid black;
+	border-radius: 15%;
+	text-align: center;
+	vertical-align: middle;
 }
+
+#art, #poem {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	height: 550px;
+	margin: 10% auto;
+	box-sizing: border-box;
+	border: 5px solid white;
+	border-radius: 10%;
+	backdrop-filter: blur(5px);
+	
+}
+
+#art_pic, #poem_pic {
+	display:flex;
+	width:100%;
+	height:55%;
+	background: url(../images/ancient-art.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* why is this not working? */
+	border-radius: 20px;
+}
+
+#poem_pic {
+	background: url(../images/night-sky-watercolour.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#art_text {
+	display:flex;
+	flex-direction: column;
+	width:90%;
+	height:45%;
+	font-size: 1.5rem;
+	margin: auto;
+	color:bisque;
+	text-align: left;
+	font-family: "Josefin Sans", sans-serif;	
+}
+
+#poem_text {
+	display:flex;
+	flex-direction: column;
+	width:90%;
+	height:45%;
+	margin: auto;
+	color:bisque;
+	font-style: italic;
+	font-family: "Cedarville Cursive", cursive;
+	font-weight: bolder;
+	font-size: 1.75rem;
+	text-align: center;
+}
+
+#art_motivation, #poem_motivation {
+	background-color: bisque;
+	color:black;
+	font-weight:bold;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+#art_caption, #poem_caption {
+	font-size: smaller;
+	
+}
+
+
+
 
 /* designing a specific element */
 #menuToggler {
@@ -315,19 +401,45 @@ footer, #footer {
 
 	#banner {
 	width: 90%;
-	margin: 15% auto;
-	font-family: 'Times New Roman', Times, serif;
+	margin: 15% 5% auto;
 	font-size: 0.7rem;
 	font-weight: bold;
-	text-align: center;
-	color: silver;
-	/* text-shadow: rgb(255, 255, 255) 1px 0 10px; */
-	opacity: 1;
-	position: relative;
-	box-sizing: border-box;
-	border-radius: 15%;
-	backdrop-filter: blur(1px);
 	}
+	
+	#banner a{
+		font-size: 1.9rem;
+	}
+
+	#motivation {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#art, #poem {
+		flex-direction: column;
+		border: 15px solic silver;
+		border-radius: 0%;
+		background-color: blanchedalmond;
+		color: black;
+		height: 510px;
+		width: 45%;
+		gap: 15px;
+	}
+
+	#art_pic, #poem_pic {
+		align-items: center;
+		width: 100%;
+		height: 50%;
+	}
+
+	#art_text, #poem_text {
+		color: black;
+		width: 100%;
+		height: 50%;
+		justify-content: center;
+		font-size: 1.2rem;
+	}
+
 
 	#about-content, #sky-watching-content {
 		display: flex;
@@ -364,7 +476,7 @@ footer, #footer {
 	width: 90%;
 	height: 250px;
 	/* top bottom right left */
-	margin:auto;
+	margin: 30% auto;
 	overflow: hidden;
 	position: relative;
 	box-sizing: border-box;
