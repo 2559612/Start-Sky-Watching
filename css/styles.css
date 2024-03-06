@@ -7,12 +7,10 @@
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
-/* Thanks to Pexels Phillippe Don and Noah Buscher for their pictures */
+/* Thanks to Pexels Phillippe Don and Noah Buscher for their pictures . . . and more */
 
 /* MOBILE Layout */
 
-/* QUESTIONS: Spacing: Two spcaebars or a tab? */
-/* any shortcut to indent properly? */
 /* Do we need to use the API? */
 /* Are there marks for user-input? */
 /* Debugging: the same code one after another works */
@@ -69,98 +67,54 @@ body {
   font-size: small;
 }
 
-#step1, #step2, #step3 {
+#art, #poem, #step_1, #step_2, #step_3 {
 	display: flex;
 	flex-direction: column;
-	width: 80%;
-	height: 200px;
-	margin: 0 auto;
-	border: 3px solid grey;
-	border-radius: 15%;
+	width: 85%;
+	height: 550px;
+	margin: 10% auto;
 	box-sizing: border-box;
-	font: 0.35rem "Merriweather", serif;
-	text-align: start;
-	/* why isn't the text aligning left? */
+	border: 5px solid black;
+	border-radius: 0%;
+	backdrop-filter: blur(5px);
+	align-items: stretch;
+	justify-content: center;
 }
 
-#step1pic, #step2pic, #step3pic {
+#art, #poem {
+	background-color: bisque;
+}
+
+#step_1, #step_2, #step_3 {
+	/* background-color: 	rgb(56, 83, 93); */
+	backdrop-filter: blur(7px);
+}
+
+#step_1_pic, #step_2_pic, #step_3_pic {
 	display: flex;
 	width: 80%;
 	height: 200px;
-	margin: 0 auto;
+	margin: auto;
+	/* in case image does not load */
 	background-color: beige;
     background-size: cover; 
-    background-position: bottom;
+	background-repeat: no-repeat;
 	border: 5px solid black;
 	border-radius: 15%;
 	box-sizing: border-box;
-
+	background-position: top;
 }
 
-#step1pic {
-	height: 60%;
+#step_1_pic {
 	background-image: url("../images/look-at-the-sky.jpg");
 }
 
-#step2pic {
-	height: 60%;
+#step_2_pic {
 	background-image: url("../images/clouds.jpg");
 }
 
-#step3pic {
-	height: 60%;
-	background-position: top;
+#step_3_pic {
 	background-image: url("../images/pexels-todd-trapani-1420440.jpg");
-}
-
-
-
-#skills {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 200px;
-  margin: 0 auto;
-  background-color: beige;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-antoni-shkraba-4348405.jpg");
-  background-size: cover; 
-  background-position: center;
-  border: 1px solid #ccc;
-  border-radius: 15%;
-  box-sizing: border-box;
-}
-
-#education {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 200px;
-  margin: 0 auto;
-  background-color: beige;
-  background-image: url("../images/pexels-bo-ponomari-14720826.jpg");
-  background-size: cover; 
-  background-position: center;
-  border: 1px solid #ccc;
-  border-radius: 15%;
-  box-sizing: border-box;
-  word-break: break-all;
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 200px;
-  margin: 0 auto;
-  background-color: beige;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-adrienn-1458283.jpg");
-  /* background-image: url("../images/pexels-adrienn-1458283.jpg"); */
-  background-size: cover;
-  background-position: center;
-  background-color: #ddd;
-  border: 1px solid #ccc;
-  border-radius: 15%;
-  box-sizing: border-box;
 }
 
 #banner {
@@ -179,7 +133,7 @@ body {
 	border-top: 3px solid white;
 	border-bottom: 5px solid silver;
 	border-radius: 15px;
-	backdrop-filter: blur(7px);
+	backdrop-filter: blur(13px);
 }
 
 #banner a{
@@ -196,26 +150,11 @@ body {
 	vertical-align: middle;
 }
 
-#art, #poem {
-	display: flex;
-	flex-direction: column;
-	width: 85%;
-	height: 550px;
-	margin: 10% auto;
-	box-sizing: border-box;
-	border: 5px solid black;
-	border-radius: 10%;
-	backdrop-filter: blur(5px);
-	align-items: stretch;
-	justify-content: center;
-	
-}
-
 #art_pic, #poem_pic {
 	display:flex;
 	margin-top: 3px;
 	width:100%;
-	height:55%;
+	height:200px;
 	background: url(../images/ancient-art.jpg);
 	background-position: center;
 	background-size: contain;
@@ -230,34 +169,32 @@ body {
 	background-position: center;
 }
 
-#art_text {
+#art_text, #poem_text {
 	display:flex;
 	flex-direction: column;
-	width:90%;
-	/* height:45%; */
-	font-size: 1.5rem;
+	width:90%;	
 	margin: auto;
-	color:bisque;
+	color:black;
 	text-align: left;
 	line-height: 1.3;
-	font-family: "Josefin Sans", sans-serif;	
+	text-align: center;
 	align-items: stretch;
 	overflow-y:auto;
 }
 
+#art_text {
+	font-family: "Josefin Sans", sans-serif;	
+	font-size: 1.5rem;
+}
+
 #poem_text {
-	display:flex;
-	flex-direction: column;
-	width:90%;
-	height:45%;
-	margin: auto;
-	color:bisque;
-	font-style: italic;
 	font-family: "Cedarville Cursive", cursive;
+	height: 45%;
+	font-style: italic;
 	font-weight: bolder;
 	font-size: 1.75rem;
-	text-align: center;
 }
+
 
 #art_motivation, #poem_motivation {
 	background-color: bisque;
@@ -271,6 +208,12 @@ body {
 
 #art_caption {
 	font-size: smaller;
+}
+
+#step_1_text, #step_2_text, #step_3_text {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 0.7rem;
+	font-weight: 179;
 }
 
 #website_use {
@@ -316,12 +259,12 @@ body {
 	height: 100px;
 	margin: 5% 0 0 0;
 	box-sizing: border-box;
-	border: 5px solid transparent;
+	border: 3px solid rgb(94, 90, 90);
 	backdrop-filter: blur(3px);
 	text-align: center;
 	justify-content: center;
 	justify-items: center;
-	border-radius: 10px;
+	border-radius: 0px;
 }
 
 #homepage_action_box {
@@ -338,7 +281,15 @@ body {
 	color:blanchedalmond;
 	font-family: 'Merriweather', sans-serif;
 	font-size: 2rem;
+    font-weight: bolder;
 	text-decoration: double;
+}
+
+#homepage_action_box a:hover {
+	-webkit-text-stroke: 2px black;
+	-webkit-text-fill-color: blanchedalmond;
+	transform: scale(1,2);
+	transition: all 0.3s ease-in-out;
 }
 
 
@@ -439,16 +390,167 @@ footer, #footer {
 	transition: all 0.3s ease-in-out;
 }
 
+#skills, #education, #contact {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	background-color: beige;
+	background-size: cover; 
+	background-position: center;
+	border: 1px solid #ccc;
+	border-radius: 15%;
+	box-sizing: border-box;
+	word-break: break-all;
+  }
+  
+  #skills {
+	  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-antoni-shkraba-4348405.jpg");
+  }
+  
+  #education {
+	  background-image: url("../images/pexels-bo-ponomari-14720826.jpg");
+  }
+  
+  #contact {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-adrienn-1458283.jpg");
+	/* background-image: url("../images/pexels-adrienn-1458283.jpg"); */
+  }
+
+
+ .mySwiper {
+	min-width:100vh;
+	display: flex;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+ }
+
+ .mySwiper p{
+	font-size: small;
+ }
+
+ .swiper-slide {
+	height: auto;
+	background: white;
+	border: 4px solid pink;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	position: relative;
+ }
+
+ .swiper-content {
+	font-size: 30px;
+	color: white;
+	background: url(../images/ancient-art.jpg);
+ }
+
+
+
+/* the slideshow styles */
+
+/* Slideshow container */
+ .slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+
+
+
+
+
 /* TABLET AND DESKTOP STYLES */
 
 @media screen and (min-width: 515px) {
 
    /* applies to screens wider than 514px */
   
-   #about {
+    #about {
 	  background-size: cover;
 	  background-position: center;
-   }
+    }
 
 	#menuToggler {
 		display: none;
@@ -538,7 +640,7 @@ footer, #footer {
 		justify-content: center;
 		gap: 3%;
 		width: 100%;
-		margin-top: 30%;
+		margin-top: 00%;
 		padding: 5%;
 	}
 	
