@@ -4,28 +4,30 @@ menuToggler.addEventListener('click', ev => {
 	menuToggler.textContent = menuToggler.textContent === "×" ? "≡" : "×";
 });
 
-const slideshow = document.querySelector('.slideshow');
+const slideshow1 = document.querySelector('.slideshow1');
+const slideshow2 = document.querySelector('.slideshow2');
+const slides = document.querySelector('.slide');
 const prevButton = document.querySelector('#prev');
 const nextButton = document.querySelector('#next');
-let currentSlide = 0;
+//let curSlide = 0;
 
-prevButton.addEventListener('click', () => {
-  currentSlide--;
-  if (currentSlide < 0) {
-    currentSlide = slides.length - 1;
-  }
-  slideshow.style.transform = `translateX(-${currentSlide * 100}%)`;
-});
+// prevButton.addEventListener('click', () => {
+//   curSlide--;
+//   if (curSlide < 0) {
+//     curSlide = slides.length - 1;
+//   }
+//   slideshow1.style.transform = `translateX(-${curSlide * 100}%)`;
+// });
 
-nextButton.addEventListener('click', () => {
-  currentSlide++;
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
-  }
-  slideshow.style.transform = `translateX(-${currentSlide * 100}%)`;
-});
+// nextButton.addEventListener('click', () => {
+//   curSlide++;
+//   if (curSlide >= slides.length) {
+//     curSlide = 0;
+//   }
+//   slideshow1.style.transform = `translateX(-${curSlide * 100}%)`;
+// });
 
-// beginning of the slideshow code
+// beginning of the slideshow1 code
 
 let slideIndex = 1;
 showSlides(slideIndex);

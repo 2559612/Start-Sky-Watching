@@ -448,10 +448,10 @@ footer, #footer {
 
 
 
-/* the slideshow styles */
+/* the slideshow1 styles */
 
-/* Slideshow container */
- .slideshow-container {
+/* slideshow1 container */
+ .slideshow1-container, .slideshow2-container {
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
@@ -459,24 +459,15 @@ footer, #footer {
 
   * {box-sizing: border-box}
   body {font-family: Verdana, sans-serif; margin:0}
-  .mySlides {display: none}
+  .mySlides, .mySlides2 {
+	display: none
+	style="width:100%"
+	}
   img {vertical-align: middle;}
+  .slideshow2-container p{ vertical-align: middle;}
+
   
-  /* Next & previous buttons */
-  .prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 16px;
-	margin-top: -22px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
-  }
+  
   
   /* Position the "next button" to the right */
   .next {
@@ -507,6 +498,22 @@ footer, #footer {
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
+  }
+
+  /* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
   }
   
   /* The dots/bullets/indicators */
@@ -662,7 +669,7 @@ footer, #footer {
 }
 
 
-.slideshow {
+.slideshow1 {
 	width: 90%;
 	height: 250px;
 	/* top bottom right left */
@@ -683,7 +690,7 @@ footer, #footer {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	animation: slideShow 12s infinite;
+	animation: slideshow1 12s infinite;
 	opacity: 0;
 	box-sizing: border-box;
 	border: 1px solid white;
@@ -706,7 +713,7 @@ footer, #footer {
 	animation-delay: 12s;
   }
   
-  @keyframes slideShow {
+  @keyframes slideshow1 {
 	0% { opacity: 0; }
 	8% { opacity: 1; }
 	33% { opacity: 1; }
