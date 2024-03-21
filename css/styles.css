@@ -455,18 +455,13 @@ footer, #footer {
 	display: flex;
 	width: 80%;
 	padding-top: 15%;
-	height: 350px;
+	min-height: 350px;
+	height:fit-content;
 	position: relative;
 	margin: auto;
 	top: 10vh;
   }
 
-
-  body {font-family: Verdana, sans-serif; margin:0}
-  .mySlides, .mySlides2 {
-	display: none;
-	width: 100%;
-	}
 
 	/* make sure the nearest container is referenced */
   .slideshow1-img {
@@ -479,13 +474,22 @@ footer, #footer {
 	border-radius: 5%;
 	border: 4px solid silver;
   }
-  
+
+  .mySlides, .mySlides2 {
+	display: none;
+	width: 100%;
+	}
+
   .mySlides2 p{ 
 	font-size: small;
 	vertical-align: middle;}
 
+  #slideshow_intro {
+	text-align: ;
+  }
+
     /* Next & previous buttons */
-  .prev1, .next1, .prev2, .prev2 {
+  .prev1, .next1, .prev2, .next2 {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -502,19 +506,18 @@ footer, #footer {
   
   
   /* Position the "next button" to the right */
-  .next1 {
+  .next1, .next2 {
 	right: 0;
 	border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev1:hover, .next1:hover {
+  .prev1:hover, .prev2:hover, .next1:hover, .next2:hover {
 	background-color: rgba(0,0,0,0.8);
   }
   
   /* Caption text */
-  .slideshow1_titletext, .slideshow1_text {
-	color: #f2f2f2;
+  .slideshow1_titletext, .slideshow2_titletext, .slideshow1_text, .slideshow2_text, .slideshow1_intro, .slideshow2_intro {
 	padding: 8px 12px;
 	position: absolute;
 	width: 100%;
@@ -523,28 +526,74 @@ footer, #footer {
 	text-align: left;
   }
 
-  .slideshow1_titletext{
+  .slideshow2_titletext {
+	box-sizing: border-box;
+	backdrop-filter: blur(10px);
+  }
+
+  .slideshow2_text {
+	color: black;
+	box-sizing: border-box;
+	backdrop-filter: blur(10px);
+	text-wrap: balance;
+	bottom: 13px;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: bold;
+  }
+
+  .slideshow1_text {
+	color: white;
+	box-sizing: border-box;
+	backdrop-filter: blur(10px);
+	text-wrap: balance;
+	bottom: 8px;
+	font-size: 17px;
+	font-style: italic;
+	font-weight: 100;
+  }
+
+  .slideshow1_intro, .slideshow2_intro {
+	text-align: center;
+	font-weight: 100;
+	margin:auto;
+	font-size: 50px;
+  }
+
+  .slideshow2_intro {
+	color: black;
+	font-weight: bold;
+	box-sizing: border-box;
+	backdrop-filter: blur(10px);
+	text-wrap: balance;
+  }
+
+  .slideshow1_intro {
+	color: white;
+  }
+
+  .slideshow1_titletext, .slideshow2_titletext{
+	color: #f2f2f2;
 	text-align: center;
 	font-weight: 100;
 	top: 8px;
 	font-size: 37px;
   }
-
-  .slideshow1_text {
-	bottom: 8px;
-	font-size: 17px;
-	font-style: italic;
-	font-weight: 100;
-	white-space: wrap;
-  }
   
   /* Number text (1/3 etc) */
-  .numbertext {
-	color: #f2f2f2;
+  .numbertext1, .numbertext2 {
 	font-size: 12px;
 	padding: 8px 12px;
 	position: absolute;
 	top: 0;
+  }
+
+  .numbertext1 {
+	color: white;
+  }
+
+  .numbertext2 {
+	color: black;
   }
 
 

@@ -66,6 +66,27 @@ let slideIndex = 1;
 let slides = document.getElementsByClassName("mySlides");
 showSlides(slideIndex);
 
+prev1.addEventListener('click', () => {
+  plusSlides(-1);
+  slides = document.getElementsByClassName("mySlides");
+});
+
+next1.addEventListener('click', () => {
+  plusSlides(1);
+  slides = document.getElementsByClassName("mySlides");
+});
+
+prev2.addEventListener('click', () => {
+  plusSlides(-1);
+  slides = document.getElementsByClassName("mySlides2");
+});
+
+next2.addEventListener('click', () => {
+  plusSlides(1);
+  slides = document.getElementsByClassName("mySlides2");
+});
+
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -91,22 +112,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-prev1.addEventListener('click', () => {
-  plusSlides(-1);
- 
-});
-
-next1.addEventListener('click', () => {
-  plusSlides(1);
-});
-
-prev2.addEventListener('click', () => {
-  plusSlides(-1);
-  slides = document.getElementsByClassName("mySlides2");
-});
-
-next2.addEventListener('click', () => {
-  plusSlides(1);
-  slides = document.getElementsByClassName("mySlides2");
-});
 
