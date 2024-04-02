@@ -4,13 +4,13 @@ menuToggler.addEventListener('click', ev => {
 	menuToggler.textContent = menuToggler.textContent === "×" ? "≡" : "×";
 });
 
-const slideshow1 = document.querySelector('.slideshow1');
-const slideshow2 = document.querySelector('.slideshow2');
+const slideshow31 = document.querySelector('.slideshow31');
+const slideshow32 = document.querySelector('.slideshow32');
 // const slides = document.querySelector('.slide');
-const prev1 = document.querySelector('.prev1');
-const next1 = document.querySelector('.next1');
-const prev2 = document.querySelector('.prev2');
-const next2 = document.querySelector('.next2');
+const prev31 = document.querySelector('.prev31');
+const next31 = document.querySelector('.next31');
+const prev32 = document.querySelector('.prev32');
+const next32 = document.querySelector('.next32');
 
 //let curSlide = 0;
 
@@ -70,23 +70,23 @@ const next2 = document.querySelector('.next2');
 
 let slideIndex = [1,1];
 /* Class the members of each slideshow group with different CSS classes */
-let slideId = ["mySlides", "mySlides2"]
+let slideId = ["mySlides31", "mySlides32"]
 showSlides(1, 0);
 showSlides(1, 1);
 
-prev1.addEventListener('click', () => {
+prev31.addEventListener('click', () => {
   plusSlides(-1, 0)
 });
 
-next1.addEventListener('click', () => {
+next31.addEventListener('click', () => {
   plusSlides(1, 0)
 });
 
-prev2.addEventListener('click', () => {
+prev32.addEventListener('click', () => {
   plusSlides(-1, 1)
 });
 
-next2.addEventListener('click', () => {
+next32.addEventListener('click', () => {
   plusSlides(1, 1)
 });
 

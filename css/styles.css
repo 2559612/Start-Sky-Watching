@@ -255,17 +255,20 @@ body {
 
 #homepage_action {
 	display: flex;
-	width: 100%;
+	width: 90%;
+	bottom: 3%;
 	height: 100px;
-	margin: 5% 0 0 0;
+	margin: 5% auto 5% auto;
 	box-sizing: border-box;
-	border: 3px solid rgb(94, 90, 90);
+	border-bottom: 7px solid rgb(138, 131, 131);
 	backdrop-filter: blur(3px);
 	text-align: center;
 	justify-content: center;
 	justify-items: center;
-	border-radius: 0px;
+	border-radius: 15%;
 }
+
+/* rgb(94, 90, 90); */
 
 #homepage_action_box {
 	justify-self: center;
@@ -286,7 +289,7 @@ body {
 }
 
 #homepage_action_box a:hover {
-	-webkit-text-stroke: 2px black;
+	-webkit-text-stroke: 2px grey;
 	-webkit-text-fill-color: blanchedalmond;
 	transform: scale(1,2);
 	transition: all 0.3s ease-in-out;
@@ -446,10 +449,7 @@ footer, #footer {
 	background: url(../images/ancient-art.jpg);
  }
 
-
-
 /*  read the skies slideshows */
-
 #read_the_skies_slideshows {
 	display: flex;
 	flex: 2;
@@ -463,7 +463,8 @@ footer, #footer {
 	margin-top: 0;
 	padding: 1%;
 }
- .slideshow1-container, .slideshow2-container {
+
+ .slideshow31_container, .slideshow32_container {
 	display: flex;
 	width: 80%;
 	padding-top: 15%;
@@ -474,37 +475,18 @@ footer, #footer {
 	top: 10vh;
   }
 
-  .slideshow_img:hover {
-    z-index: 3;
-  }
-
-
-	/* make sure the nearest container is referenced */
-  .slideshow_img {
-	height: 100%;
-	width: 100%; 
-	object-fit: cover;
-	top: 0px;
-	position: absolute;
-	box-sizing: border-box;
-	border-radius: 15px;
-	border-top: 7px solid white;
-	border-bottom: 3px solid silver;
-	z-index: 1;
-  }
-
-  .mySlides, .mySlides2 {
+  .mySlides31, .mySlides32 {
 	display: none;
 	width: 100%;
 	}
 
-  .mySlides2 p{ 
+  .mySlides32 p{ 
 	font-size: small;
 	vertical-align: middle;}
 
 
     /* Next & previous buttons */
-  .prev1, .next1, .prev2, .next2 {
+  .prev31, .next31, .prev32, .next32 {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -520,20 +502,38 @@ footer, #footer {
 	z-index: 3;
   }
   
-  
   /* Position the "next button" to the right */
-  .next1, .next2 {
+  .next31, .next32 {
 	right: 0;
 	border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev1:hover, .prev2:hover, .next1:hover, .next2:hover {
+  .prev31:hover, .prev32:hover, .next31:hover, .next32:hover {
 	background-color: rgba(0,0,0,0.8);
   }
   
 
-  .slideshow1_titletext, .slideshow2_titletext, .slideshow1_text, .slideshow2_text, .slideshow1_intro, .slideshow2_intro {
+  .slideshow31_img:hover, .slideshow32_img:hover {
+    z-index: 3;
+  }
+
+
+	/* make sure the nearest container is referenced */
+  .slideshow31_img, .slideshow32_img {
+	height: 100%;
+	width: 100%; 
+	object-fit: cover;
+	top: 0px;
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 15px;
+	border-top: 7px solid white;
+	border-bottom: 3px solid silver;
+	z-index: 1;
+  }
+
+  .slideshow31_intro, .slideshow32_intro, .slideshow31_titletext, .slideshow32_titletext, .slideshow31_text, .slideshow32_text {
 	padding: 8px 12px;
 	position: absolute;
 	text-align: center;
@@ -543,21 +543,12 @@ footer, #footer {
 	opacity: 1;
   }
 
-  .slideshow1_titletext, .slideshow2_titletext, .slideshow1_intro, .slideshow2_intro {
+  .slideshow31_titletext, .slideshow32_titletext, .slideshow31_intro, .slideshow32_intro {
 	width: 100%;
   }
 
-  .slideshow1_text, .slideshow2_text {
+  .slideshow31_text, .slideshow32_text {
 	width: auto;
-  }
-
-  .slideshow1_titletext, .slideshow2_titletext {
-	box-sizing: border-box;
-	backdrop-filter: blur(10px);
-
-  }
-
-  .slideshow1_text, .slideshow2_text {
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
 	text-wrap: balance;
@@ -567,15 +558,25 @@ footer, #footer {
 	font-weight: bold;
   }
 
-  .slideshow1_text {
+  .slideshow31_text {
 	color: white;
   }
 
-  .slideshow2_text {
+  .slideshow32_text {
 	color: black;
   }
 
-  .slideshow1_intro, .slideshow2_intro {
+  .slideshow31_titletext, .slideshow32_titletext {
+	box-sizing: border-box;
+	backdrop-filter: blur(10px);
+	color: #f2f2f2;
+	text-align: center;
+	font-weight: 100;
+	top: 8px;
+	font-size: 30px;
+  }
+
+  .slideshow31_intro, .slideshow32_intro {
 	text-align: center;
 	top: 40%;
 	font-weight: 100;
@@ -583,7 +584,7 @@ footer, #footer {
 	font-size: 40px;
   }
 
-  .slideshow2_intro {
+  .slideshow32_intro {
 	color: black;
 	font-weight: bold;
 	box-sizing: border-box;
@@ -591,20 +592,12 @@ footer, #footer {
 	text-wrap: balance;
   }
 
-  .slideshow1_intro {
+  .slideshow31_intro {
 	color: white;
-  }
-
-  .slideshow1_titletext, .slideshow2_titletext{
-	color: #f2f2f2;
-	text-align: center;
-	font-weight: 100;
-	top: 8px;
-	font-size: 30px;
   }
   
   /* Number text (1/3 etc) */
-  .numbertext1, .numbertext2 {
+  .numbertext31, .numbertext32 {
 	font-size: 15px;
 	padding: 12px 12px;
 	position: absolute;
@@ -612,11 +605,11 @@ footer, #footer {
 	z-index: 3;
   }
 
-  .numbertext1 {
+  .numbertext31 {
 	color: white;
   }
 
-  .numbertext2 {
+  .numbertext32 {
 	color: black;
   }
 
@@ -715,6 +708,7 @@ footer, #footer {
 
 	#art_text, #poem_text {
 		color: black;
+		padding-top: 15%;
 		width: 100%;
 		height: 50%;
 		justify-content: center;
@@ -748,17 +742,17 @@ footer, #footer {
 	}
 
 
-	.slideshow1_intro, .slideshow2_intro {
+	.slideshow31_intro, .slideshow32_intro {
 		font-size: 60px;
 	}
 
 
-	.slideshow1_titletext, .slideshow2_titletext {
+	.slideshow31_titletext, .slideshow32_titletext {
 		font-size: 40px;
 		top: 7%;
 	}
 
-	.slideshow1_text, .slideshow2_text {
+	.slideshow31_text, .slideshow32_text {
 		font-size: 20px;
 	}
 
@@ -793,7 +787,7 @@ footer, #footer {
 }
 
 
-.slideshow1 {
+.slideshow21_container {
 	width: 90%;
 	height: 250px;
 	/* top bottom right left */
@@ -821,32 +815,3 @@ footer, #footer {
 
   }
   
-  .slide:nth-child(1) {
-	animation-delay: 0s;
-  }
-  
-  .slide:nth-child(2) {
-	animation-delay: 4s;
-  }
-  
-  .slide:nth-child(3) {
-	animation-delay: 8s;
-  }
-
-  .slide:nth-child(4) {
-	animation-delay: 12s;
-  }
-  
-  @keyframes slideshow1 {
-	0% { opacity: 0; }
-	8% { opacity: 1; }
-	33% { opacity: 1; }
-	41% { opacity: 0; }
-	100% { opacity: 0; }
-  }
-  
-  button {
-	margin: 10px;
-	padding: 10px;
-	font-size: 16px;
-  }
