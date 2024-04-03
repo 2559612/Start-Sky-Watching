@@ -26,13 +26,6 @@ body {
 	background-position: center;
 }
 
-#start_skywatching{
-	background: url('../images/noah-buscher-PSnkh76C-Z8-unsplash.jpg') no-repeat center center fixed;
-	opacity: 1;
-	background-size: cover;
-	background-position: center;
-}
-
 #read_the_skies{
 	background: url('../images/noah-buscher-PSnkh76C-Z8-unsplash.jpg') no-repeat center center fixed;
 	opacity: 1;
@@ -51,7 +44,7 @@ body {
 
 }
 
-#about-content, #sky-watching-content {
+#about-content {
   display: flex;
   flex: 3;
   flex-direction: column;
@@ -67,55 +60,20 @@ body {
   font-size: small;
 }
 
-#art, #poem, #step_1, #step_2, #step_3 {
+#art, #poem {
 	display: flex;
 	flex-direction: column;
 	width: 85%;
 	height: 550px;
 	margin: 10% auto;
 	box-sizing: border-box;
-	border: 5px solid black;
-	border-radius: 0%;
-	backdrop-filter: blur(5px);
+	border-top: 15px solid goldenrod;
+	border-radius: 7%;
 	align-items: stretch;
 	justify-content: center;
-}
-
-#art, #poem {
 	background-color: bisque;
 }
 
-#step_1, #step_2, #step_3 {
-	/* background-color: 	rgb(56, 83, 93); */
-	backdrop-filter: blur(7px);
-}
-
-#step_1_pic, #step_2_pic, #step_3_pic {
-	display: flex;
-	width: 80%;
-	height: 200px;
-	margin: auto;
-	/* in case image does not load */
-	background-color: beige;
-    background-size: cover; 
-	background-repeat: no-repeat;
-	border: 5px solid black;
-	border-radius: 15%;
-	box-sizing: border-box;
-	background-position: top;
-}
-
-#step_1_pic {
-	background-image: url("../images/look-at-the-sky.jpg");
-}
-
-#step_2_pic {
-	background-image: url("../images/clouds.jpg");
-}
-
-#step_3_pic {
-	background-image: url("../images/pexels-todd-trapani-1420440.jpg");
-}
 
 #banner {
 	top: 7%;
@@ -159,8 +117,6 @@ body {
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	/* why is this not working? */
-	border-radius: 10px;
 }
 
 #poem_pic {
@@ -210,12 +166,6 @@ body {
 	font-size: smaller;
 }
 
-#step_1_text, #step_2_text, #step_3_text {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 0.7rem;
-	font-weight: 179;
-}
-
 #website_use {
 	display: flex;
 	width: 85%;
@@ -223,8 +173,8 @@ body {
 	height: 450px;
 	margin: 1% auto;
 	box-sizing: border;
-	border: 5px solid black;
-	border-radius: 15px;
+	border-top: 15px solid grey;
+	border-radius: 7%;
 	background-color: bisque;
 	padding: 7px;
 	gap: 5px;
@@ -450,21 +400,22 @@ footer, #footer {
  }
 
 /*  read the skies slideshows */
-#read_the_skies_slideshows {
+#read_the_skies_slideshows, #about_slideshows {
 	display: flex;
-	flex: 2;
 	flex-direction: column;
 	height: auto;
 	box-sizing: border-box;
 	border: 1px solid white;
 	justify-content: center;
-	column-gap: 5px;
+	gap: 50px;
 	width: 100%;
 	margin-top: 0;
-	padding: 1%;
+	padding-left: 9%;
+	padding-right: 9%;
+	margin-bottom: 21%;
 }
 
- .slideshow31_container, .slideshow32_container {
+ .slideshow_2_1_container, .slideshow_2_2_container {
 	display: flex;
 	width: 80%;
 	padding-top: 15%;
@@ -475,18 +426,18 @@ footer, #footer {
 	top: 10vh;
   }
 
-  .mySlides31, .mySlides32 {
+  .mySlides_2_1, .mySlides_2_2 {
 	display: none;
 	width: 100%;
 	}
 
-  .mySlides32 p{ 
+  .mySlides_2_2 p{ 
 	font-size: small;
 	vertical-align: middle;}
 
 
     /* Next & previous buttons */
-  .prev31, .next31, .prev32, .next32 {
+  .prev_2_1, .next_2_1, .prev_2_2, .next_2_2 {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -499,28 +450,23 @@ footer, #footer {
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
-	z-index: 3;
   }
   
   /* Position the "next button" to the right */
-  .next31, .next32 {
+  .next_2_1, .next_2_2 {
 	right: 0;
 	border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev31:hover, .prev32:hover, .next31:hover, .next32:hover {
+  .prev_2_1:hover, .prev_2_2:hover, .next_2_1:hover, .next_2_2:hover {
 	background-color: rgba(0,0,0,0.8);
   }
   
 
-  .slideshow31_img:hover, .slideshow32_img:hover {
-    z-index: 3;
-  }
-
 
 	/* make sure the nearest container is referenced */
-  .slideshow31_img, .slideshow32_img {
+  .slideshow_2_1_img, .slideshow_2_2_img {
 	height: 100%;
 	width: 100%; 
 	object-fit: cover;
@@ -530,24 +476,26 @@ footer, #footer {
 	border-radius: 15px;
 	border-top: 7px solid white;
 	border-bottom: 3px solid silver;
-	z-index: 1;
   }
 
-  .slideshow31_intro, .slideshow32_intro, .slideshow31_titletext, .slideshow32_titletext, .slideshow31_text, .slideshow32_text {
+  .slideshow_2_1_intro, .slideshow_2_2_intro, .slideshow_2_1_titletext, .slideshow_2_2_titletext, .slideshow_2_1_text, .slideshow_2_2_text {
 	padding: 8px 12px;
 	position: absolute;
 	text-align: center;
 	font-family: 'Merriweather', serif;
 	text-align: left;
-	z-index: 2;
 	opacity: 1;
   }
 
-  .slideshow31_titletext, .slideshow32_titletext, .slideshow31_intro, .slideshow32_intro {
+  .slideshow_2_1_img:hover, .slideshow_2_2_img:hover {
+	z-index: 1;
+  }
+
+  .slideshow_2_1_titletext, .slideshow_2_2_titletext, .slideshow_2_1_intro, .slideshow_2_2_intro {
 	width: 100%;
   }
 
-  .slideshow31_text, .slideshow32_text {
+  .slideshow_2_1_text, .slideshow_2_2_text {
 	width: auto;
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
@@ -558,15 +506,15 @@ footer, #footer {
 	font-weight: bold;
   }
 
-  .slideshow31_text {
+  .slideshow_2_1_text {
 	color: white;
   }
 
-  .slideshow32_text {
+  .slideshow_2_2_text {
 	color: black;
   }
 
-  .slideshow31_titletext, .slideshow32_titletext {
+  .slideshow_2_1_titletext, .slideshow_2_2_titletext {
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
 	color: #f2f2f2;
@@ -576,7 +524,7 @@ footer, #footer {
 	font-size: 30px;
   }
 
-  .slideshow31_intro, .slideshow32_intro {
+  .slideshow_2_1_intro, .slideshow_2_2_intro {
 	text-align: center;
 	top: 40%;
 	font-weight: 100;
@@ -584,7 +532,7 @@ footer, #footer {
 	font-size: 40px;
   }
 
-  .slideshow32_intro {
+  .slideshow_2_2_intro {
 	color: black;
 	font-weight: bold;
 	box-sizing: border-box;
@@ -592,24 +540,23 @@ footer, #footer {
 	text-wrap: balance;
   }
 
-  .slideshow31_intro {
+  .slideshow_2_1_intro {
 	color: white;
   }
   
   /* Number text (1/3 etc) */
-  .numbertext31, .numbertext32 {
+  .numbertext_2_1, .numbertext_2_2 {
 	font-size: 15px;
 	padding: 12px 12px;
 	position: absolute;
 	top: 0;
-	z-index: 3;
   }
 
-  .numbertext31 {
+  .numbertext_2_1 {
 	color: white;
   }
 
-  .numbertext32 {
+  .numbertext_2_2 {
 	color: black;
   }
 
@@ -731,34 +678,36 @@ footer, #footer {
 		display: flex;
 		flex: 2;
 		flex-direction: row;
-		height: auto;
+		max-height: fit-content;
 		box-sizing: border-box;
 		border: 1px solid white;
 		justify-content: center;
-		row-gap: 2.5%;
+		gap: 7%;
 		width: 100%;
 		margin-top: 0;
-		padding: 1%;
+		padding: 5%;
+		overflow: scroll;
 	}
 
 
-	.slideshow31_intro, .slideshow32_intro {
-		font-size: 60px;
+	.slideshow_2_1_intro, .slideshow_2_2_intro {
+		font-size: 40px;
 	}
 
 
-	.slideshow31_titletext, .slideshow32_titletext {
+	.slideshow_2_1_titletext, .slideshow_2_2_titletext {
 		font-size: 40px;
 		top: 7%;
 	}
 
-	.slideshow31_text, .slideshow32_text {
+	.slideshow_2_1_text, .slideshow_2_2_text {
 		font-size: 20px;
 	}
 
-	#about-content, #sky-watching-content {
+	#about-content {
 		display: flex;
 		flex: 3;
+		flex-wrap: wrap;
 		flex-direction: row;
 		box-sizing: border-box;
 		border: 1px solid white;
@@ -787,22 +736,7 @@ footer, #footer {
 }
 
 
-.slideshow21_container {
-	width: 90%;
-	height: 250px;
-	/* top bottom right left */
-	margin: 30% auto;
-	overflow: hidden;
-	position: relative;
-	box-sizing: border-box;
-	border: 5px solid white;
-	font-family: "Merriweather", serif;
-	font-size:0.6em;
-	color:bisque;
-	font-style: italic;
-	text-align: center;
-	backdrop-filter: blur(1px);
-  }
+
   
   .slide {
 	width: 100%;
@@ -812,6 +746,5 @@ footer, #footer {
 	opacity: 0;
 	box-sizing: border-box;
 	border: 1px solid white;
-
   }
   
