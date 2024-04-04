@@ -15,33 +15,20 @@
 /* Are there marks for user-input? */
 /* Debugging: the same code one after another works */
 
-body {
-	margin: 0;
-	}
 
 #home {
 	background: url('../images/pexels-philippe-donn-1257860.jpg') no-repeat center center fixed;
-	opacity: 1;
 	background-size: cover;
-	background-position: center;
 }
 
 #read_the_skies{
 	background: url('../images/noah-buscher-PSnkh76C-Z8-unsplash.jpg') no-repeat center center fixed;
-	opacity: 1;
 	background-size: cover;
-	background-position: center;
 }
 
 #about {
-	/* When the linear gradient is removed, the picture covers */
-	/* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg") ;	 */
 	background: url('../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg') no-repeat center center fixed;
-	background-repeat: no-repeat;
-	background-position: center;
 	background-size: cover;
-	/* why is it not covering? */
-
 }
 
 #about-content {
@@ -218,7 +205,7 @@ body {
 	border-radius: 15%;
 }
 
-/* rgb(94, 90, 90); */
+
 
 #homepage_action_box {
 	justify-self: center;
@@ -354,7 +341,7 @@ p {
 	margin-bottom: 21%;
 }
 
- .slideshow_2_1_container, .slideshow_2_2_container, .slideshow_3_1_container, .slideshow_3_2_container, .slideshow_3_3_container {
+ .slideshow_container {
 	display: flex;
 	width: 80%;
 	padding-top: 15%;
@@ -368,6 +355,7 @@ p {
   .mySlides_2_1, .mySlides_2_2, .mySlides_3_1, .mySlides_3_2, .mySlides_3_3 {
 	display: none;
 	width: 100%;
+	backdrop-filter: blur(10px);
 	}
 
   .mySlides_2_2 p{ 
@@ -376,7 +364,7 @@ p {
 
 
     /* Next & previous buttons */
-  .prev_2_1, .next_2_1, .prev_2_2, .next_2_2, .prev2, .next2 , .prev, .next {
+  .prev, .next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -392,20 +380,20 @@ p {
   }
   
   /* Position the "next button" to the right */
-  .next_2_1, .next_2_2, .next_3_1, .next_3_2, .next_3_3, .next2, .next {
+  .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev_2_1:hover, .prev_2_2:hover, .next_2_1:hover, .next_2_2:hover, .prev2:hover, .next2:hover, .next:hover, .prev:hover {
+  .next:hover, .prev:hover {
 	background-color: rgba(0,0,0,0.8);
   }
   
 
 
 	/* make sure the nearest container is referenced */
-  .slideshow_2_1_img, .slideshow_2_2_img {
+  .slideshow_2_1_img, .slideshow_2_2_img, .slideshow_3_1_img, .slideshow_3_2_img, .slideshow_3_3_img {
 	height: 100%;
 	width: 100%; 
 	object-fit: cover;
@@ -416,6 +404,7 @@ p {
 	border-top: 7px solid white;
 	border-bottom: 3px solid silver;
   }
+
 
   .slideshow_2_1_intro, .slideshow_2_2_intro, .slideshow_2_1_titletext, .slideshow_2_2_titletext, .slideshow_2_1_text, .slideshow_2_2_text {
 	padding: 8px 12px;
@@ -625,7 +614,6 @@ p {
 		width: 100%;
 		margin-top: 0;
 		padding: 5%;
-		overflow: scroll;
 	}
 
 

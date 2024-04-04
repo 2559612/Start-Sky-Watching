@@ -4,12 +4,6 @@ menuToggler.addEventListener('click', ev => {
 	menuToggler.textContent = menuToggler.textContent === "×" ? "≡" : "×";
 });
 
-// const prev_3_1 = document.querySelector('.prev_3_1');
-// const next_3_1 = document.querySelector('.next_3_1');
-// const prev_3_2 = document.querySelector('.prev_3_2');
-// const next_3_2 = document.querySelector('.next_3_2');
-// const prev_3_3 = document.querySelector('.prev_3_3');
-// const next_3_3 = document.querySelector('.next_3_3');
 const prev = document.querySelectorAll('.prev');
 const next = document.querySelectorAll('.next');
 
