@@ -4,20 +4,17 @@ menuToggler.addEventListener('click', ev => {
 	menuToggler.textContent = menuToggler.textContent === "×" ? "≡" : "×";
 });
 
-const slideshow_2_1 = document.querySelector('.slideshow_2_1');
-const slideshow_2_2 = document.querySelector('.slideshow_2_2');
-const slideshow_3_1 = document.querySelector('.slideshow_3_1');
-const prev_2_1 = document.querySelector('.prev_2_1');
-const next_2_1 = document.querySelector('.next_2_1');
-const prev_2_2 = document.querySelector('.prev_2_2');
-const next_2_2 = document.querySelector('.next_2_2');
-const prev_3_1 = document.querySelector('.prev_3_1');
-const next_3_1 = document.querySelector('.next_3_1');
-
+// const prev_3_1 = document.querySelector('.prev_3_1');
+// const next_3_1 = document.querySelector('.next_3_1');
+// const prev_3_2 = document.querySelector('.prev_3_2');
+// const next_3_2 = document.querySelector('.next_3_2');
+// const prev_3_3 = document.querySelector('.prev_3_3');
+// const next_3_3 = document.querySelector('.next_3_3');
+const prev = document.querySelectorAll('.prev');
+const next = document.querySelectorAll('.next');
 
 let slideIndex = [1,1,1];
-/* Class the members of each slideshow group with different CSS classes */
-let slideId = ["mySlides_2_1", "mySlides_2_2", "mySlides_3_1"];
+let slideId = ["mySlides_3_1", "mySlides_3_2", "mySlides_3_3"];
 showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
@@ -37,29 +34,15 @@ function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
 
-prev_2_1.addEventListener('click', () => {
-  plusSlides(-1, 0)
-});
+for (let i = 0; i < 3; i++) {
+  prev[i].addEventListener('click', () => {
+    plusSlides(-1, i);
+  });
 
-next_2_1.addEventListener('click', () => {
-  plusSlides(1, 0)
-});
-
-prev_2_2.addEventListener('click', () => {
-  plusSlides(-1, 1)
-});
-
-next_2_2.addEventListener('click', () => {
-  plusSlides(1, 1)
-});
-
-prev_3_1.addEventListener('click', () => {
-  plusSlides(-1, 2)
-});
-
-next_3_1.addEventListener('click', () => {
-  plusSlides(1, 2)
-});
+  next[i].addEventListener('click', () => {
+    plusSlides(1, i);
+  });
+}
 
 
 

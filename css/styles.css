@@ -309,40 +309,6 @@ p {
 	font-size: 3em;
 }
 
-footer, #footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	opacity: 1;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 10%;
-	background-color: grey;
-	color: white;
-	font-size: 0.7em;
-	z-index: 3;
-	border-radius: 50% 50% 0% 0%;
-	display: flex;
-}
-
-#footer a {
-	color: lightgray;
-	padding: 2em;
-	font-family: "Merriweather", serif;
-	font-weight: 700;
-	font-style: italic;
-	text-align: bottom;
-	font-size: large;
-}
-
-#footer a:hover {
-	color: goldenrod;
-	transform: scale(1,1);
-	transition: all 0.3s ease-in-out;
-}
-
 #skills, #education, #contact {
 	display: flex;
 	flex-direction: column;
@@ -372,33 +338,6 @@ footer, #footer {
   }
 
 
- .mySwiper {
-	min-width:100vh;
-	display: flex;
-	height: auto;
-	align-items: center;
-	justify-content: center;
- }
-
- .mySwiper p{
-	font-size: small;
- }
-
- .swiper-slide {
-	height: auto;
-	background: white;
-	border: 4px solid pink;
-	margin-bottom: 10px;
-	border-radius: 20px;
-	position: relative;
- }
-
- .swiper-content {
-	font-size: 30px;
-	color: white;
-	background: url(../images/ancient-art.jpg);
- }
-
 /*  read the skies slideshows */
 #read_the_skies_slideshows, #about_slideshows {
 	display: flex;
@@ -415,7 +354,7 @@ footer, #footer {
 	margin-bottom: 21%;
 }
 
- .slideshow_2_1_container, .slideshow_2_2_container {
+ .slideshow_2_1_container, .slideshow_2_2_container, .slideshow_3_1_container, .slideshow_3_2_container, .slideshow_3_3_container {
 	display: flex;
 	width: 80%;
 	padding-top: 15%;
@@ -426,7 +365,7 @@ footer, #footer {
 	top: 10vh;
   }
 
-  .mySlides_2_1, .mySlides_2_2 {
+  .mySlides_2_1, .mySlides_2_2, .mySlides_3_1, .mySlides_3_2, .mySlides_3_3 {
 	display: none;
 	width: 100%;
 	}
@@ -437,7 +376,7 @@ footer, #footer {
 
 
     /* Next & previous buttons */
-  .prev_2_1, .next_2_1, .prev_2_2, .next_2_2 {
+  .prev_2_1, .next_2_1, .prev_2_2, .next_2_2, .prev2, .next2 , .prev, .next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -453,13 +392,13 @@ footer, #footer {
   }
   
   /* Position the "next button" to the right */
-  .next_2_1, .next_2_2 {
+  .next_2_1, .next_2_2, .next_3_1, .next_3_2, .next_3_3, .next2, .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev_2_1:hover, .prev_2_2:hover, .next_2_1:hover, .next_2_2:hover {
+  .prev_2_1:hover, .prev_2_2:hover, .next_2_1:hover, .next_2_2:hover, .prev2:hover, .next2:hover, .next:hover, .prev:hover {
 	background-color: rgba(0,0,0,0.8);
   }
   
