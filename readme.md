@@ -16,7 +16,7 @@ The `css/styles.css` file contains a basic starting template for a responsive pa
 
 The `js/scripts.js` file contains a simple console.log statement to confirm that it is being executed.
 
-## references and image credits (All images are copyright-free)
+## references and image credits (All images are copyright-free unless otherwise mentioned)
 
 The home/index page
 1. background picture: Photo credit: Philippe Donn (source: pexels.com)
@@ -25,4 +25,12 @@ The home/index page
 4. How-to-use-this-site picture: AI generated (source: craiyon.com)
 
 'Read The Skies' page
-1. background picture: Photo credit: 
+1. background picture: Photo credit: Noah Buscher (source: unsplash.com)
+
+Constellations slideshow:
+1. Title: Photo credit: Philippe Donn (source: pexels.com)
+2. Winter, Summer, All-Year: All image rights belong to starregistration.net
+
+Clouds slideshow: 
+1. Title: This image right belongs to The Washington Post
+2. The image rights for the rest of the pictures belong to boatus.com

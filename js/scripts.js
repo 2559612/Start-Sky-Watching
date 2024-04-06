@@ -4,14 +4,15 @@ menuToggler.addEventListener('click', ev => {
 	menuToggler.textContent = menuToggler.textContent === "×" ? "≡" : "×";
 });
 
+
 const prev = document.querySelectorAll('.prev');
 const next = document.querySelectorAll('.next');
 
-let slideIndex = [1,1,1];
-let slideId = ["mySlides_3_1", "mySlides_3_2", "mySlides_3_3"];
+
+let slideIndex = [1,1];
+let slideId = ["mySlides_2_1", "mySlides_2_2"];
 showSlides(1, 0);
 showSlides(1, 1);
-showSlides(1, 2);
 
 function showSlides(n, no) {
   let i;
@@ -28,15 +29,16 @@ function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
 
-for (let i = 0; i < 3; i++) {
-  prev[i].addEventListener('click', () => {
-    plusSlides(-1, i);
-  });
+for (let i = 0; i < 2; i++) {
+    prev[i].addEventListener('click', () => {
+      plusSlides(-1, i);
+    });
+  
+    next[i].addEventListener('click', () => {
+      plusSlides(1, i);
+    });
+  }
 
-  next[i].addEventListener('click', () => {
-    plusSlides(1, i);
-  });
-}
 
 
 
