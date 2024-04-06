@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Fredoka:wght@300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
@@ -7,7 +6,6 @@
 
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
-/* Thanks to Pexels Phillippe Don and Noah Buscher for their pictures . . . and more */
 
 /* MOBILE Layout */
 
@@ -16,226 +14,8 @@
 /* Debugging: the same code one after another works */
 
 
-#home {
-	background: url('../images/pexels-philippe-donn-1257860.jpg') no-repeat center center fixed;
-	background-size: cover;
-}
+/* Designing the menu, present on all pages */
 
-#read_the_skies{
-	background: url('../images/noah-buscher-PSnkh76C-Z8-unsplash.jpg') no-repeat center center fixed;
-	background-size: cover;
-}
-
-#about {
-	background: url('../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg') no-repeat center center fixed;
-	background-size: cover;
-}
-
-#about-content {
-  display: flex;
-  flex: 3;
-  flex-direction: column;
-  box-sizing: border-box;
-  /* only for designing purposes */
-  border: 2px solid grey;
-  gap: 2em;
-  width: 100%;
-  margin-top: 3%;
-  padding: 5%;
-  color:beige;
-  text-wrap: wrap;
-  font-size: small;
-}
-
-#art, #poem {
-	display: flex;
-	flex-direction: column;
-	width: 85%;
-	height: 550px;
-	margin: 10% auto;
-	box-sizing: border-box;
-	border-top: 15px solid goldenrod;
-	border-radius: 7%;
-	align-items: stretch;
-	justify-content: center;
-	background-color: bisque;
-}
-
-
-#banner {
-	top: 7%;
-	width: 90%;
-	margin: 20% auto;
-	padding-bottom: 5%;
-	font-family: "Josefin Sans", sans-serif;
-	font-weight: 175;
-	font-size: 0.5rem;
-	color: white;
-	text-align: center;
-	opacity: 1;
-	position: relative;
-	box-sizing: border-box;
-	border-top: 3px solid white;
-	border-bottom: 5px solid silver;
-	border-radius: 15px;
-	backdrop-filter: blur(13px);
-}
-
-#banner a{
-	font-size: 1.6rem;
-	font-weight: bold;
-	width: 80%;
-	color:black;
-	font-family: 'Merriweather', serif;
-	background-color: bisque;
-	box-sizing: border-box;
-	border-top: 5px solid black;
-	border-radius: 10px;
-	text-align: center;
-	vertical-align: middle;
-}
-
-#art_pic, #poem_pic {
-	display:flex;
-	margin-top: 3px;
-	width:100%;
-	height:200px;
-	background: url(../images/ancient-art.jpg);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-#poem_pic {
-	background: url(../images/night-sky-watercolour.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-#art_text, #poem_text {
-	display:flex;
-	flex-direction: column;
-	width:90%;	
-	margin: auto;
-	color:black;
-	text-align: left;
-	line-height: 1.3;
-	text-align: center;
-	align-items: stretch;
-	overflow-y:auto;
-}
-
-#art_text {
-	font-family: "Josefin Sans", sans-serif;	
-	font-size: 1.5rem;
-}
-
-#poem_text {
-	font-family: "Cedarville Cursive", cursive;
-	height: 45%;
-	font-style: italic;
-	font-weight: bolder;
-	font-size: 1.75rem;
-}
-
-
-#art_motivation, #poem_motivation {
-	background-color: bisque;
-	width: 90%;
-	margin: 0% 1% auto auto;
-	color:black;
-	font-weight:bold;
-	font-family: "Josefin Sans", sans-serif;
-	text-align: center;
-}
-
-#art_caption {
-	font-size: smaller;
-}
-
-#website_use {
-	display: flex;
-	width: 85%;
-	/* when using images, height should be in pixels */
-	height: 450px;
-	margin: 1% auto;
-	box-sizing: border;
-	border-top: 15px solid grey;
-	border-radius: 7%;
-	background-color: bisque;
-	padding: 7px;
-	gap: 5px;
-}
-
-#website_use_pic {
-	display:flex;
-	width:50%;
-	height:100%;
-	background: url(../images/website-use.jpg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	box-sizing: border-box;
-	border: 5px solid rgb(78, 75, 75);
-	border-radius: 15px;
-}
-
-#website_use_text {
-	width: 50%;
-	height: 100%;
-	font-family: "Josefin Sans", sans-serif;
-	font-weight: light;
-	color:rgb(25, 25, 25);
-	font-size: 0.5rem;
-	overflow: auto;
-}
-
-#homepage_action {
-	display: flex;
-	width: 90%;
-	bottom: 3%;
-	height: 100px;
-	margin: 5% auto 5% auto;
-	box-sizing: border-box;
-	border-bottom: 7px solid rgb(138, 131, 131);
-	backdrop-filter: blur(3px);
-	text-align: center;
-	justify-content: center;
-	justify-items: center;
-	border-radius: 15%;
-}
-
-
-
-#homepage_action_box {
-	justify-self: center;
-	vertical-align: middle;
-	height: fit-content;
-	background-color: grey;
-	padding: 5px;
-	margin: auto;
-	border-radius: 10px;
-}
-
-#homepage_action_box a {
-	color:blanchedalmond;
-	font-family: 'Merriweather', sans-serif;
-	font-size: 2rem;
-    font-weight: bolder;
-	text-decoration: double;
-}
-
-#homepage_action_box a:hover {
-	-webkit-text-stroke: 2px grey;
-	-webkit-text-fill-color: blanchedalmond;
-	transform: scale(1,2);
-	transition: all 0.3s ease-in-out;
-}
-
-
-
-
-/* designing a specific element */
 #menuToggler {
 	position: absolute;
 	top: 0.5rem;
@@ -251,7 +31,7 @@
 
 #menu {
 	position: fixed;
-    font-family: "Merriweather", serif;
+	font-family: "Merriweather", serif;
 	font-weight: 700;
 	width: 100vw;
 	height: 100vh;
@@ -288,6 +68,228 @@
 	transition: all 0.3s ease-in-out;
 }
 
+/* THE HOME PAGE */
+
+/* setting the background image for the page */
+
+#home {
+	background: url('../images/pexels-philippe-donn-1257860.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* desigigning the banner */
+
+#banner {
+	top: 7%;
+	width: 90%;
+	margin: 20% auto;
+	padding-bottom: 5%;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 175;
+	font-size: 0.5rem;
+	color: white; /* color of text */
+	text-align: center;
+	opacity: 1;
+	position: relative;
+	box-sizing: border-box;
+	border-top: 3px solid white;
+	border-bottom: 5px solid silver;
+	border-radius: 15px;
+	backdrop-filter: blur(13px);
+}
+
+#banner a{
+	font-size: 1.6rem;
+	font-weight: bold;
+	width: 80%;
+	color:black;
+	font-family: 'Merriweather', serif;
+	background-color: bisque;
+	box-sizing: border-box;
+	border-top: 5px solid black;
+	border-radius: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* designing the motivation pieces */
+
+.motivation_piece {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	height: 550px;
+	margin: 10% auto;
+	box-sizing: border-box;
+	border-top: 15px solid goldenrod;
+	border-radius: 15px;
+	align-items: stretch;
+	justify-content: center;
+	background-color: bisque;
+}
+
+.motivation_img {
+	display:flex;
+	margin-top: 3px;
+	width:100%;
+	height:200px;
+	object-fit: contain;
+	justify-content: center;
+}
+
+#art_text, #poem_text {
+	display:flex;
+	flex-direction: column;
+	width:90%;	
+	margin: auto;
+	color:black;
+	text-align: left;
+	line-height: 1.3;
+	text-align: center;
+	align-items: stretch;
+	overflow-y:auto;
+}
+
+#art_text {
+	font-family: "Josefin Sans", sans-serif;	
+	font-size: 1.5rem;
+}
+
+#poem_text {
+	font-family: "Cedarville Cursive", cursive;
+	height: 45%;
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 1.75rem;
+}
+
+.motivation_question {
+	background-color: bisque;
+	width: 90%;
+	margin: 0% 1% auto auto;
+	color:black;
+	font-weight:bold;
+	font-family: "Josefin Sans", sans-serif;
+	text-align: center;
+}
+
+/* designing the website-use piece */
+
+#website_use {
+	display: flex;
+	width: 85%;
+	height: 450px;
+	margin: 1% auto;
+	box-sizing: border;
+	border-top: 15px solid grey;
+	border-radius: 7%;
+	background-color: bisque;
+	padding: 7px;
+	gap: 5px;
+}
+
+#website_use_img {
+	display:flex;
+	width:50%;
+	height:100%;
+	box-sizing: border-box;
+	border: 5px solid rgb(78, 75, 75);
+	border-radius: 15px;
+}
+
+#website_use_text {
+	width: 50%;
+	height: 100%;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: light;
+	color:rgb(25, 25, 25);
+	font-size: 0.5rem;
+	overflow: auto;
+}
+
+/* designing the homepage action box */
+
+#homepage_action {
+	display: flex;
+	width: 90%;
+	bottom: 3%;
+	height: 100px;
+	margin: 5% auto 5% auto;
+	box-sizing: border-box;
+	border-top: 5px solid rgb(138, 131, 131);
+	border-bottom: 7px solid silver;
+	backdrop-filter: blur(3px);
+	text-align: center;
+	justify-content: center;
+	justify-items: center;
+	border-radius: 15%;
+}
+
+#homepage_action_box {
+	justify-self: center;
+	vertical-align: middle;
+	height: fit-content;
+	background-color: grey;
+	padding: 5px;
+	margin: auto;
+	border-radius: 10px;
+}
+
+#homepage_action_box a {
+	color:blanchedalmond;
+	font-family: 'Merriweather', sans-serif;
+	font-size: 1.7rem;
+	font-weight: bolder;
+	text-decoration: double;
+}
+
+#homepage_action_box a:hover {
+	-webkit-text-stroke: 2px grey;
+	-webkit-text-fill-color: blanchedalmond;
+	transform: scale(1,2);
+	transition: all 0.3s ease-in-out;
+}
+
+/* THE "Read The Skies" PAGE */
+
+/* setting the background image for the page */
+#read_the_skies{
+	background: url('../images/noah-buscher-PSnkh76C-Z8-unsplash.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+/* THE "About" PAGE */
+
+/* setting the background image for the page */
+#about {
+	background: url('../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+
+#about-content {
+display: flex;
+flex: 3;
+flex-direction: column;
+box-sizing: border-box;
+/* only for designing purposes */
+border: 2px solid grey;
+gap: 2em;
+width: 100%;
+margin-top: 3%;
+padding: 5%;
+color:beige;
+text-wrap: wrap;
+font-size: small;
+}
+
+
+
+
+
+
 p {
 	padding: 0 1em;
 	max-width: 600px;
@@ -309,20 +311,20 @@ p {
 	border-radius: 15%;
 	box-sizing: border-box;
 	word-break: break-all;
-  }
-  
-  #skills {
-	  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-antoni-shkraba-4348405.jpg");
-  }
-  
-  #education {
-	  background-image: url("../images/pexels-bo-ponomari-14720826.jpg");
-  }
-  
-  #contact {
+}
+
+#skills {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-antoni-shkraba-4348405.jpg");
+}
+
+#education {
+	background-image: url("../images/pexels-bo-ponomari-14720826.jpg");
+}
+
+#contact {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-adrienn-1458283.jpg");
 	/* background-image: url("../images/pexels-adrienn-1458283.jpg"); */
-  }
+}
 
 
 /*  read the skies slideshows */
@@ -341,7 +343,7 @@ p {
 	margin-bottom: 21%;
 }
 
- .slideshow_container {
+.slideshow_container {
 	display: flex;
 	width: 80%;
 	padding-top: 15%;
@@ -350,21 +352,21 @@ p {
 	position: relative;
 	margin: auto;
 	top: 10vh;
-  }
+}
 
-  .mySlides_2_1, .mySlides_2_2, .mySlides_3_1, .mySlides_3_2, .mySlides_3_3 {
+.mySlides_2_1, .mySlides_2_2, .mySlides_3_1, .mySlides_3_2, .mySlides_3_3 {
 	display: none;
 	width: 100%;
 	backdrop-filter: blur(10px);
 	}
 
-  .mySlides_2_2 p{ 
+.mySlides_2_2 p{ 
 	font-size: small;
 	vertical-align: middle;}
 
 
-    /* Next & previous buttons */
-  .prev, .next {
+	/* Next & previous buttons */
+.prev, .next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -377,23 +379,23 @@ p {
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
+}
+
+/* Position the "next button" to the right */
+.next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .next:hover, .prev:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.next:hover, .prev:hover {
 	background-color: rgba(0,0,0,0.8);
-  }
-  
+}
+
 
 
 	/* make sure the nearest container is referenced */
-  .slideshow_2_1_img, .slideshow_2_2_img, .slideshow_3_1_img, .slideshow_3_2_img, .slideshow_3_3_img {
+.slideshow_2_1_img, .slideshow_2_2_img, .slideshow_3_1_img, .slideshow_3_2_img, .slideshow_3_3_img {
 	height: 100%;
 	width: 100%; 
 	object-fit: cover;
@@ -403,27 +405,27 @@ p {
 	border-radius: 15px;
 	border-top: 7px solid white;
 	border-bottom: 3px solid silver;
-  }
+}
 
 
-  .slideshow_2_1_intro, .slideshow_2_2_intro, .slideshow_2_1_titletext, .slideshow_2_2_titletext, .slideshow_2_1_text, .slideshow_2_2_text {
+.slideshow_2_1_intro, .slideshow_2_2_intro, .slideshow_2_1_titletext, .slideshow_2_2_titletext, .slideshow_2_1_text, .slideshow_2_2_text {
 	padding: 8px 12px;
 	position: absolute;
 	text-align: center;
 	font-family: 'Merriweather', serif;
 	text-align: left;
 	opacity: 1;
-  }
+}
 
-  .slideshow_2_1_img:hover, .slideshow_2_2_img:hover {
+.slideshow_2_1_img:hover, .slideshow_2_2_img:hover {
 	z-index: 1;
-  }
+}
 
-  .slideshow_2_1_titletext, .slideshow_2_2_titletext, .slideshow_2_1_intro, .slideshow_2_2_intro {
+.slideshow_2_1_titletext, .slideshow_2_2_titletext, .slideshow_2_1_intro, .slideshow_2_2_intro {
 	width: 100%;
-  }
+}
 
-  .slideshow_2_1_text, .slideshow_2_2_text {
+.slideshow_2_1_text, .slideshow_2_2_text {
 	width: auto;
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
@@ -432,17 +434,17 @@ p {
 	font-size: 17px;
 	font-style: italic;
 	font-weight: bold;
-  }
+}
 
-  .slideshow_2_1_text {
+.slideshow_2_1_text {
 	color: white;
-  }
+}
 
-  .slideshow_2_2_text {
+.slideshow_2_2_text {
 	color: black;
-  }
+}
 
-  .slideshow_2_1_titletext, .slideshow_2_2_titletext {
+.slideshow_2_1_titletext, .slideshow_2_2_titletext {
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
 	color: #f2f2f2;
@@ -450,55 +452,65 @@ p {
 	font-weight: 100;
 	top: 8px;
 	font-size: 30px;
-  }
+}
 
-  .slideshow_2_1_intro, .slideshow_2_2_intro {
+.slideshow_2_1_intro, .slideshow_2_2_intro {
 	text-align: center;
 	top: 40%;
 	font-weight: 100;
 	margin:auto;
 	font-size: 40px;
-  }
+}
 
-  .slideshow_2_2_intro {
+.slideshow_2_2_intro {
 	color: black;
 	font-weight: bold;
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
 	text-wrap: balance;
-  }
+}
 
-  .slideshow_2_1_intro {
+.slideshow_2_1_intro {
 	color: white;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext_2_1, .numbertext_2_2 {
+}
+
+/* Number text (1/3 etc) */
+.numbertext_2_1, .numbertext_2_2 {
 	font-size: 15px;
 	padding: 12px 12px;
 	position: absolute;
 	top: 0;
-  }
+}
 
-  .numbertext_2_1 {
+.numbertext_2_1 {
 	color: white;
-  }
+}
 
-  .numbertext_2_2 {
+.numbertext_2_2 {
 	color: black;
-  }
+}
 
-  /* Fading animation */
-  .fade {
+/* Fading animation */
+.fade {
 	animation-name: fade;
 	animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
+}
+
+@keyframes fade {
 	from {opacity: .4} 
 	to {opacity: 1}
-  }
-  
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	animation: slideshow1 12s infinite;
+	opacity: 0;
+	box-sizing: border-box;
+	border: 1px solid white;
+}
+
 
 
 
@@ -508,12 +520,9 @@ p {
 
 @media screen and (min-width: 515px) {
 
-   /* applies to screens wider than 514px */
-  
-    #about {
-	  background-size: cover;
-	  background-position: center;
-    }
+/* applies to screens wider than 514px */
+
+/*elements present on all pages */
 
 	#menuToggler {
 		display: none;
@@ -548,7 +557,9 @@ p {
 	text-align: center;
 	}
 
-	#banner {
+/* the home/index page */
+
+    #banner {
 	width: 90%;
 	margin: 9% 5% auto;
 	font-size: 0.7rem;
@@ -564,21 +575,11 @@ p {
 		flex-direction: row;
 	}
 
-	#art, #poem {
+	.motivation_piece {
 		flex-direction: column;
-		border: 15px solic silver;
-		border-radius: 0%;
-		background-color: blanchedalmond;
-		color: black;
 		height: 510px;
 		width: 45%;
 		gap: 15px;
-	}
-
-	#art_pic, #poem_pic {
-		align-items: center;
-		width: 100%;
-		height: 50%;
 	}
 
 	#art_text, #poem_text {
@@ -588,16 +589,11 @@ p {
 		height: 50%;
 		justify-content: center;
 		font-size: 1.2rem;
-		/* how do I get the text to be centered when screen max size? */
 	}
 
 	#art_text {
 		width: 90%;
 		text-align: center;
-	}
-
-	#art_motivation{
-		width: 90%;
 	}
 
 	/* read the skies page */
@@ -616,7 +612,6 @@ p {
 		padding: 5%;
 	}
 
-
 	.slideshow_2_1_intro, .slideshow_2_2_intro {
 		font-size: 40px;
 	}
@@ -630,6 +625,13 @@ p {
 	.slideshow_2_1_text, .slideshow_2_2_text {
 		font-size: 20px;
 	}
+
+	/* the "about" page */
+
+	#about {
+		background-size: cover;
+		background-position: center;
+	}	
 
 	#about-content {
 		display: flex;
@@ -646,32 +648,25 @@ p {
 	}
 	
 	#skills {
-	  flex-direction: row;
-	  width: 30%;
+	flex-direction: row;
+	width: 30%;
 	}
 	
 	#education {
-	  flex-direction: row;
-	  width: 30%;
+	flex-direction: row;
+	width: 30%;
 	}
 	
 	#contact {
-	  flex-direction: row;
-	  width: 30%;
+	flex-direction: row;
+	width: 30%;
 	}
+
+
 
 }
 
 
 
-  
-  .slide {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	animation: slideshow1 12s infinite;
-	opacity: 0;
-	box-sizing: border-box;
-	border: 1px solid white;
-  }
-  
+
+

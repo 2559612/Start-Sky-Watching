@@ -1,9 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/GGwkV7WK)
-# CTEC3905 Assignment
+# CTEC3905 Assignment - 2559612
 
-This repository contains basic boilerplate code for you to get started with.
+This repository contains code and styles for a website with information and motivation for beginner sky-gazers. 
 
-You will need to replace the contents of these files with your own code.
 
 ## index.html
 
@@ -16,3 +15,14 @@ The `css/styles.css` file contains a basic starting template for a responsive pa
 ## js/scripts.js
 
 The `js/scripts.js` file contains a simple console.log statement to confirm that it is being executed.
+
+## references and image credits (All images are copyright-free)
+
+The home/index page
+1. background picture: Photo credit: Philippe Donn (source: pexels.com)
+2. Nebra Sky Disc: Photo credit: Frank Vincentz (source: Wikimedia Commons)
+3. Sky Picture (poem motivation): AI generated (source: craiyon.com)
+4. How-to-use-this-site picture: AI generated (source: craiyon.com)
+
+'Read The Skies' page
+1. background picture: Photo credit: 
