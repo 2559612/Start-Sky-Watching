@@ -112,6 +112,14 @@
 	vertical-align: middle;
 }
 
+p {
+	padding: 0 1em;
+	max-width: 600px;
+	margin: 1em auto;
+	line-height: 1em;
+	font-size: 3em;
+}
+
 /* designing the motivation pieces */
 
 .motivation_piece {
@@ -122,7 +130,7 @@
 	margin: 10% auto;
 	box-sizing: border-box;
 	border-top: 15px solid goldenrod;
-	border-radius: 15px;
+	border-radius: 5%;
 	align-items: stretch;
 	justify-content: center;
 	background-color: bisque;
@@ -253,79 +261,11 @@
 /* THE "Read The Skies" PAGE */
 
 /* setting the background image for the page */
+
 #read_the_skies{
 	background: url('../images/noah-buscher-PSnkh76C-Z8-unsplash.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
-
-
-/* THE "About" PAGE */
-
-/* setting the background image for the page */
-#about {
-	background: url('../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg') no-repeat center center fixed;
-	background-size: cover;
-}
-
-
-
-#about-content {
-display: flex;
-flex: 3;
-flex-direction: column;
-box-sizing: border-box;
-/* only for designing purposes */
-border: 2px solid grey;
-gap: 2em;
-width: 100%;
-margin-top: 3%;
-padding: 5%;
-color:beige;
-text-wrap: wrap;
-font-size: small;
-}
-
-
-
-
-
-
-p {
-	padding: 0 1em;
-	max-width: 600px;
-	margin: 1em auto;
-	line-height: 1em;
-	font-size: 3em;
-}
-
-#skills, #education, #contact {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	height: 200px;
-	margin: 0 auto;
-	background-color: beige;
-	background-size: cover; 
-	background-position: center;
-	border: 1px solid #ccc;
-	border-radius: 15%;
-	box-sizing: border-box;
-	word-break: break-all;
-}
-
-#skills {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-antoni-shkraba-4348405.jpg");
-}
-
-#education {
-	background-image: url("../images/pexels-bo-ponomari-14720826.jpg");
-}
-
-#contact {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-adrienn-1458283.jpg");
-	/* background-image: url("../images/pexels-adrienn-1458283.jpg"); */
-}
-
 
 /*  read the skies slideshows */
 #read_the_skies_slideshows {
@@ -334,7 +274,6 @@ p {
 	height: auto;
 	box-sizing: border-box;
 	border: 1px solid white;
-	justify-content: center;
 	gap: 50px;
 	width: 100%;
 	margin-top: 0;
@@ -617,47 +556,100 @@ p {
 		font-size: 20px;
 	}
 
-	/* the "about" page */
-
-	#about {
-		background-size: cover;
-		background-position: center;
-	}	
-
-	#about-content {
-		display: flex;
-		flex: 3;
-		flex-wrap: wrap;
-		flex-direction: row;
-		box-sizing: border-box;
-		border: 1px solid white;
-		justify-content: center;
-		gap: 3%;
-		width: 100%;
-		margin-top: 00%;
-		padding: 5%;
-	}
-	
-	#skills {
-	flex-direction: row;
-	width: 30%;
-	}
-	
-	#education {
-	flex-direction: row;
-	width: 30%;
-	}
-	
-	#contact {
-	flex-direction: row;
-	width: 30%;
-	}
-
-
 
 }
 
 
+/* the "about" page
 
+#about {
+	background: url('../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+#about-content {
+display: flex;
+flex: 3;
+flex-direction: column;
+box-sizing: border-box;
+border: 2px solid grey;
+gap: 2em;
+width: 100%;
+margin-top: 3%;
+padding: 5%;
+color:beige;
+text-wrap: wrap;
+font-size: small;
+}
+
+
+
+
+
+#skills, #education, #contact {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	background-color: beige;
+	background-size: cover; 
+	background-position: center;
+	border: 1px solid #ccc;
+	border-radius: 15%;
+	box-sizing: border-box;
+	word-break: break-all;
+}
+
+#skills {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-antoni-shkraba-4348405.jpg");
+}
+
+#education {
+	background-image: url("../images/pexels-bo-ponomari-14720826.jpg");
+}
+
+#contact {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-adrienn-1458283.jpg");
+	/* background-image: url("../images/pexels-adrienn-1458283.jpg"); 
+}
+
+
+MOBILE BIT 
+
+
+#about {
+	background-size: cover;
+	background-position: center;
+}	
+
+#about-content {
+	display: flex;
+	flex: 3;
+	flex-wrap: wrap;
+	flex-direction: row;
+	box-sizing: border-box;
+	border: 1px solid white;
+	justify-content: center;
+	gap: 3%;
+	width: 100%;
+	margin-top: 00%;
+	padding: 5%;
+}
+
+#skills {
+flex-direction: row;
+width: 30%;
+}
+
+#education {
+flex-direction: row;
+width: 30%;
+}
+
+#contact {
+flex-direction: row;
+width: 30%;
+} */
 
 
