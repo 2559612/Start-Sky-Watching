@@ -191,7 +191,7 @@ p {
 	box-sizing: border;
 	border-top: 15px solid grey;
 	border-radius: 7%;
-	background-color: bisque;
+	backdrop-filter: blur(10px);
 	padding: 7px;
 	gap: 5px;
 }
@@ -210,7 +210,7 @@ p {
 	height: 100%;
 	font-family: "Josefin Sans", sans-serif;
 	font-weight: light;
-	color:rgb(25, 25, 25);
+	color: silver;
 	font-size: 0.5rem;
 	overflow: auto;
 }
@@ -224,13 +224,12 @@ p {
 	height: 100px;
 	margin: 5% auto 5% auto;
 	box-sizing: border-box;
-	border-top: 5px solid rgb(138, 131, 131);
 	border-bottom: 7px solid silver;
 	backdrop-filter: blur(3px);
 	text-align: center;
 	justify-content: center;
 	justify-items: center;
-	border-radius: 15%;
+	border-radius: 20px;
 }
 
 #homepage_action_box {
@@ -273,7 +272,6 @@ p {
 	flex-direction: column;
 	height: auto;
 	box-sizing: border-box;
-	border: 1px solid white;
 	gap: 50px;
 	width: 100%;
 	margin-top: 0;
@@ -282,16 +280,19 @@ p {
 	margin-bottom: 21%;
 }
 
+/* designing the conatiner that holds both the slideshows */
+
 .slideshow_container {
 	display: flex;
 	width: 80%;
-	padding-top: 15%;
+	padding-top: 13%;
 	min-height: 400px;
 	height:fit-content;
 	position: relative;
 	margin: auto;
-	top: 10vh;
 }
+
+/* designing the slides */
 
 .mySlides_2_1, .mySlides_2_2{
 	display: none;
@@ -301,10 +302,11 @@ p {
 
 .mySlides_2_2 p{ 
 	font-size: small;
-	vertical-align: middle;}
+	vertical-align: middle;
+}
 
+/* designing the slideshow control buttons */
 
-	/* Next & previous buttons */
 .prev, .next {
 	cursor: pointer;
 	position: absolute;
@@ -320,20 +322,17 @@ p {
 	user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .next:hover, .prev:hover {
 	background-color: rgba(0,0,0,0.8);
 }
+	
+/* designing the display of each slideshow */
 
-
-
-	/* make sure the nearest container is referenced */
 .slideshow_2_1_img, .slideshow_2_2_img {
 	height: 100%;
 	width: 100%; 
@@ -343,9 +342,8 @@ p {
 	box-sizing: border-box;
 	border-radius: 15px;
 	border-top: 7px solid white;
-	border-bottom: 3px solid silver;
+	border-bottom: 5px solid silver;
 }
-
 
 .slideshow_2_1_intro, .slideshow_2_2_intro, .slideshow_2_1_titletext, .slideshow_2_2_titletext, .slideshow_2_1_text, .slideshow_2_2_text {
 	padding: 8px 12px;
@@ -383,14 +381,22 @@ p {
 	color: black;
 }
 
-.slideshow_2_1_titletext, .slideshow_2_2_titletext {
+.slideshow_2_1_titletext, .slideshow_2_2_titletext  {
 	box-sizing: border-box;
 	backdrop-filter: blur(10px);
-	color: #f2f2f2;
 	text-align: center;
-	font-weight: 100;
 	top: 8px;
 	font-size: 30px;
+}
+
+.slideshow_2_1_titletext {
+	color: white;
+	font-weight: 100;
+}
+
+.slideshow_2_2_titletext {
+	color: black;
+	font-weight: 500;
 }
 
 .slideshow_2_1_intro, .slideshow_2_2_intro {
@@ -401,7 +407,7 @@ p {
 	font-size: 40px;
 }
 
-.slideshow_2_2_intro {
+.slideshow_2_2_intro{
 	color: black;
 	font-weight: bold;
 	box-sizing: border-box;
@@ -442,13 +448,9 @@ p {
 
 
 
+/* SMALLER TABLET AND DESKTOP STYLES */
 
-
-
-
-/* TABLET AND DESKTOP STYLES */
-
-@media screen and (min-width: 515px) {
+@media screen and (min-width: 515px) and (max-width: 780px) {
 
 /* applies to screens wider than 514px */
 
@@ -534,7 +536,6 @@ p {
 		flex-direction: row;
 		max-height: fit-content;
 		box-sizing: border-box;
-		border: 1px solid white;
 		justify-content: center;
 		gap: 7%;
 		width: 100%;
@@ -543,113 +544,179 @@ p {
 	}
 
 	.slideshow_2_1_intro, .slideshow_2_2_intro {
-		font-size: 40px;
+		font-size: 30px;
 	}
 
 
 	.slideshow_2_1_titletext, .slideshow_2_2_titletext {
-		font-size: 40px;
-		top: 7%;
+		font-size: 1.5em;
 	}
 
 	.slideshow_2_1_text, .slideshow_2_2_text {
-		font-size: 20px;
+		font-size: 0.9em;
 	}
 
-
+	.footer {
+		display: flex;
+		flex-direction: row;
+		flex-grow: initial;
+		border-radius: 20px;	
+		transform: none;
+		opacity: 1;
+		height: 15%;
+		position: relative;
+		gap: 0.1px;
+		bottom: 100px;
+		box-sizing: border-box;
+		border-bottom: 5px solid silver;
+		background: transparent;
+		backdrop-filter: blur(10px);
+		width: 70%;
+		margin: auto;
+		justify-content: center;
+	}
+	
+	.footer a {
+		padding: 1%;
+		color: silver;
+		font-size: 1.75em;
+		text-align: center;
+	}
 }
 
+/* LARGER TABLET AND DESKTOP STYLES */
 
-/* the "about" page
+@media screen and (min-width: 780px) {
+	
+	/*elements present on all pages */
 
-#about {
-	background: url('../images/simon-abrams-k_T9Zj3SE8k-unsplash.jpg') no-repeat center center fixed;
-	background-size: cover;
-}
+	#menuToggler {
+		display: none;
+	}
 
-#about-content {
-display: flex;
-flex: 3;
-flex-direction: column;
-box-sizing: border-box;
-border: 2px solid grey;
-gap: 2em;
-width: 100%;
-margin-top: 3%;
-padding: 5%;
-color:beige;
-text-wrap: wrap;
-font-size: small;
-}
+	#menu {
+		display: flex;
+		flex-direction: row;
+		flex-grow: initial;
+		border-radius: 20px;	
+		transform: none;
+		opacity: 1;
+		height: auto;
+		position: relative;
+		gap: 0.1px;
+		top: 30px;
+		box-sizing: border-box;
+		border-bottom: 3px solid burlywood;
+		background: transparent;
+		backdrop-filter: blur(10px);
+		width: 90%;
+		margin: auto;
+	}	
 
-
-
-
-
-#skills, #education, #contact {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	height: 200px;
-	margin: 0 auto;
-	background-color: beige;
-	background-size: cover; 
-	background-position: center;
-	border: 1px solid #ccc;
-	border-radius: 15%;
-	box-sizing: border-box;
-	word-break: break-all;
-}
-
-#skills {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-antoni-shkraba-4348405.jpg");
-}
-
-#education {
-	background-image: url("../images/pexels-bo-ponomari-14720826.jpg");
-}
-
-#contact {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../images/pexels-adrienn-1458283.jpg");
-	/* background-image: url("../images/pexels-adrienn-1458283.jpg"); 
-}
-
-
-MOBILE BIT 
-
-
-#about {
-	background-size: cover;
-	background-position: center;
-}	
-
-#about-content {
-	display: flex;
-	flex: 3;
-	flex-wrap: wrap;
-	flex-direction: row;
-	box-sizing: border-box;
-	border: 1px solid white;
+	#menu a {
+	color: white;
+	padding: 1, 4;
+	margin: 1, 4;
+	font-family: Cochin;
+	font-size: x-large;
 	justify-content: center;
-	gap: 3%;
-	width: 100%;
-	margin-top: 00%;
-	padding: 5%;
+	text-align: center;
+	}
+
+/* the home/index page */
+
+    #banner {
+	width: 75%;
+	margin: auto;
+	margin-top: 9%;
+	font-size: 0.7rem;
+	font-weight: bold;
+	}
+	
+	#banner a{
+		font-size: 1.9rem;
+	}
+
+	#motivation {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.motivation_piece {
+		flex-direction: column;
+		height: 510px;
+		width: 45%;
+		gap: 15px;
+	}
+
+	#art_text, #poem_text {
+		color: black;
+		padding-top: 15%;
+		width: 100%;
+		height: 50%;
+		justify-content: center;
+		font-size: 1.3rem;
+	}
+
+	#art_text {
+		width: 90%;
+		text-align: center;
+	}
+
+	/* read the skies page */
+
+	#read_the_skies_slideshows {
+		display: flex;
+		flex: 2;
+		flex-direction: row;
+		max-height: fit-content;
+		box-sizing: border-box;
+		justify-content: center;
+		gap: 9%;
+		width: 100%;
+		margin-top: -3%;
+	}
+
+	.slideshow_2_1_intro, .slideshow_2_2_intro {
+		font-size: 40px;
+	}
+
+	.slideshow_2_1_titletext, .slideshow_2_2_titletext {
+		font-size: 2.3em;
+	}
+
+	.slideshow_2_1_text, .slideshow_2_2_text {
+		font-size: 1.25em;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		flex-grow: initial;
+		border-radius: 20px;	
+		transform: none;
+		opacity: 1;
+		height: 15%;
+		position: relative;
+		gap: 0.1px;
+		bottom: 100px;
+		box-sizing: border-box;
+		border-bottom: 5px solid silver;
+		background: transparent;
+		backdrop-filter: blur(10px);
+		width: 70%;
+		margin: auto;
+		justify-content: center;
+	}
+	
+	.footer a {
+		padding: 1%;
+		color: silver;
+		font-size: 1.75em;
+		text-align: center;
+	}
 }
 
-#skills {
-flex-direction: row;
-width: 30%;
-}
 
-#education {
-flex-direction: row;
-width: 30%;
-}
-
-#contact {
-flex-direction: row;
-width: 30%;
-} */
 
 
