@@ -279,7 +279,7 @@ p {
   margin-top: 0;
   padding-left: 9%;
   padding-right: 9%;
-  margin-bottom: 21%;
+  margin-bottom: 7%;
 }
 
 /* designing the conatiner that holds both the slideshows */
@@ -459,34 +459,52 @@ p {
   margin: auto;
 }
 
-#image-container {
-  text-align: center;
-  margin-bottom: 2rem;
-  width:20%;
-  display:flex;
-  box-sizing: border;
-  border: 5px solid white;
-  border-radius: 15%;
-  justify-content: center;
-  object-fit: contain;
-}
-
 #info-container {
   display:flex;
-  flex-direction: column;
-  backdrop-filter: blur(10px);
+  flex-direction: row;
+  backdrop-filter: blur(15px);
   width: 80%;
+  height: fit-content;
+  margin: auto;
   padding: 1rem;
-  box-sizing: border;
-  border-radius: 5px;
-  border: 5px solid white;
-  margin-top: 2rem;
+  border-radius: 15px;
+  border: 5px solid silver;
+  margin-top: 2%;
+  margin-bottom: 7%;
+}
+
+#image-container {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 2rem;
+  display:flex;
+  justify-content: center;
+  margin: 0;
+  border: 5px solid grey;
+  border-radius: 15px;
+}
+
+#apod_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }
 
 #apod_title, #apod_explanation, #apod_intro {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  font-weight: bold;
   color: white;
+  align-items: stretch;
+  margin: auto;
+  line-height: 2;
+}
+
+#apod_explanation {
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.5;
+  width: 50%;
 }
 
 
@@ -602,31 +620,20 @@ p {
     font-size: 0.9em;
   }
 
-  .footer {
-    display: flex;
-    flex-direction: row;
-    flex-grow: initial;
-    border-radius: 20px;
-    transform: none;
-    opacity: 1;
-    height: 15%;
-    position: relative;
-    gap: 0.1px;
-    bottom: 100px;
-    box-sizing: border-box;
-    border-bottom: 5px solid silver;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    width: 70%;
-    margin: auto;
-    justify-content: center;
+  #info-container {
+    flex-direction: column;
   }
 
-  .footer a {
-    padding: 1%;
-    color: silver;
-    font-size: 1.75em;
-    text-align: center;
+  #image-container {
+    margin: auto;
+    width: 100%;
+    height: 50%;
+  }
+
+  #apod_explanation {
+    width: 100%;
+    height: 50%;
+    padding: 2%;
   }
 }
 
@@ -741,30 +748,20 @@ p {
     font-size: 1.25em;
   }
 
-  .footer {
-    display: flex;
-    flex-direction: row;
-    flex-grow: initial;
-    border-radius: 20px;
-    transform: none;
-    opacity: 1;
-    height: 15%;
-    position: relative;
-    gap: 0.1px;
-    bottom: 100px;
-    box-sizing: border-box;
-    border-bottom: 5px solid silver;
-    background: transparent;
-    backdrop-filter: blur(10px);
-    width: 70%;
-    margin: auto;
-    justify-content: center;
+  #info-container {
+    flex-direction: column;
   }
 
-  .footer a {
-    padding: 1%;
-    color: silver;
-    font-size: 1.75em;
-    text-align: center;
+  #image-container {
+    margin: auto;
+    width: 100%;
+    height: 50%;
   }
+
+  #apod_explanation {
+    width: 100%;
+    height: 50%;
+    padding: 2%;
+  }
+  
 }

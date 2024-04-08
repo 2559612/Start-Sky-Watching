@@ -51,7 +51,7 @@ if (window.location.pathname == '/read_the_skies.html') {
 
     title.textContent = data.title;
     explanation.textContent = data.explanation;
-    imageContainer.innerHTML = `<img src="${data.url}" alt="${data.title}">`;
+    imageContainer.innerHTML = `<img id='apod_img' src="${data.url}" alt="${data.title}">`;
   })
   .catch(error => console.error(error));
 }
