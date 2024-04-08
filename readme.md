@@ -8,6 +8,10 @@ This repository contains code and styles for a website with information and moti
 
 The `index.html` file includes the home page for the website with a link to the `css/styles.css` file and a script tag after the main content which links to the `js/scripts.js` file.
 
+## read_the_skies.html
+
+The 'read_the_skies.html' file includes the only other page on the website, and is similar to the index page. 
+
 ## css/styles.css
 
 The `css/styles.css` file contains the styles for the two pages of the website.
@@ -15,6 +19,10 @@ The `css/styles.css` file contains the styles for the two pages of the website.
 ## js/scripts.js
 
 The `js/scripts.js` file contains javascript code to enable user interaction, user navigation, and other transitions.
+
+## images 
+
+This contains images that were used in the production of the site. 
 
 ## references and image credits (Copyright-free images are credited. Copyright images have their owners mentioned and have been used here under the doctrine of 'fair use')
 

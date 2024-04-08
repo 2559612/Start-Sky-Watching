@@ -2,12 +2,6 @@
 const prev = document.querySelectorAll('.prev');
 const next = document.querySelectorAll('.next');
 const apiKey = 'Xm0JZSULBkpnJckbASJKoarSYPHCSfwsVzhWImlc'; 
-const nasa_apod = document.getElementById('nasa_apod');
-const titleEl = document.getElementById('title');
-const dateEl = document.getElementById('date');
-const pictureEl = document.getElementById('picture');
-const explanationEl = document.getElementById('explanation');
-const postDataButton = document.getElementById('post-data-button');
 let slideIndex = [1,1];
 let slideId = ["mySlides_2_1", "mySlides_2_2"];
 
@@ -24,7 +18,7 @@ if (window.location.pathname == '/read_the_skies.html') {
   showSlides(1, 0);
   showSlides(1, 1);
 
-  //Here, dry code is implemented and is original (not adapted from elsewhere) 
+  //Here, DRY CODE is implemented and is original (not adapted from elsewhere) 
   for (let i = 0; i < 2; i++) {
     prev[i].addEventListener('click', () => {
       plusSlides(-1, i);
@@ -44,7 +38,7 @@ if (window.location.pathname == '/read_the_skies.html') {
       <img src="${data.url}" alt="${data.title}">
       <p>${data.explanation}</p>
     `;
-    //nasa_apod.innerHTML = apodHtml;
+
     const imageContainer = document.getElementById('image-container');
     const title = document.getElementById('apod_title');
     const explanation = document.getElementById('apod_explanation');
