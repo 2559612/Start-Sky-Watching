@@ -1,6 +1,13 @@
 //declaring variables 
 const prev = document.querySelectorAll('.prev');
 const next = document.querySelectorAll('.next');
+const apiKey = 'Xm0JZSULBkpnJckbASJKoarSYPHCSfwsVzhWImlc'; 
+const nasa_apod = document.getElementById('nasa_apod');
+const titleEl = document.getElementById('title');
+const dateEl = document.getElementById('date');
+const pictureEl = document.getElementById('picture');
+const explanationEl = document.getElementById('explanation');
+const postDataButton = document.getElementById('post-data-button');
 let slideIndex = [1,1];
 let slideId = ["mySlides_2_1", "mySlides_2_2"];
 
@@ -27,6 +34,26 @@ if (window.location.pathname == '/read_the_skies.html') {
       plusSlides(1, i);
     });
   }
+
+  //Here, data is fetched from and posted on the site from the nasa APOD API
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
+  .then(response => response.json())
+  .then(data => {
+    const apodHtml = `
+      <h2>${data.title}</h2>
+      <img src="${data.url}" alt="${data.title}">
+      <p>${data.explanation}</p>
+    `;
+    //nasa_apod.innerHTML = apodHtml;
+    const imageContainer = document.getElementById('image-container');
+    const title = document.getElementById('apod_title');
+    const explanation = document.getElementById('apod_explanation');
+
+    title.textContent = data.title;
+    explanation.textContent = data.explanation;
+    imageContainer.innerHTML = `<img src="${data.url}" alt="${data.title}">`;
+  })
+  .catch(error => console.error(error));
 }
 
 /* This code was adapted from https://www.w3schools.com/howto/howto_js_slideshow.asp 
@@ -49,6 +76,8 @@ function showSlides(n, no) {
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
+
+
 
 
 
