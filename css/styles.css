@@ -336,7 +336,7 @@ p {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* designing the display of each slideshow */
+/* DESIGNING THE SLIDESHOWS */
 
 .slideshow_2_1_img,
 .slideshow_2_2_img {
@@ -351,8 +351,7 @@ p {
   border-bottom: 5px solid silver;
 }
 
-.slideshow_2_1_intro,
-.slideshow_2_2_intro,
+.slideshow_intro,
 .slideshow_2_1_titletext,
 .slideshow_2_2_titletext,
 .slideshow_2_1_text,
@@ -372,8 +371,7 @@ p {
 
 .slideshow_2_1_titletext,
 .slideshow_2_2_titletext,
-.slideshow_2_1_intro,
-.slideshow_2_2_intro {
+.slideshow_intro {
   width: 100%;
 }
 
@@ -416,16 +414,14 @@ p {
   font-weight: 500;
 }
 
-.slideshow_2_1_intro,
-.slideshow_2_2_intro {
+.slideshow_intro {
   text-align: center;
   top: 40%;
-  font-weight: 100;
   margin: auto;
   font-size: 40px;
 }
 
-.slideshow_2_2_intro {
+#slideshow_2_2_intro {
   color: black;
   font-weight: bold;
   box-sizing: border-box;
@@ -433,17 +429,17 @@ p {
   text-wrap: balance;
 }
 
-.slideshow_2_1_intro {
+#slideshow_2_1_intro {
   color: white;
 }
 
 /* Number text (1/4 etc.) */
-.numbertext_2_1,
-.numbertext_2_2 {
+.numbertext_2_1, .numbertext_2_2  {
   font-size: 15px;
   padding: 12px 12px;
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 
 .numbertext_2_1 {
@@ -607,8 +603,7 @@ p {
     padding: 5%;
   }
 
-  .slideshow_2_1_intro,
-  .slideshow_2_2_intro {
+  .slideshow_intro {
     font-size: 30px;
   }
 
@@ -742,8 +737,7 @@ p {
     margin-top: -3%;
   }
 
-  .slideshow_2_1_intro,
-  .slideshow_2_2_intro {
+  .slideshow_intro {
     font-size: 40px;
   }
 

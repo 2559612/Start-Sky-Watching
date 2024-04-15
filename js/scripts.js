@@ -33,12 +33,6 @@ if (window.location.pathname == '/read_the_skies.html') {
   fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
   .then(response => response.json())
   .then(data => {
-    const apodHtml = `
-      <h2>${data.title}</h2>
-      <img src="${data.url}" alt="${data.title}">
-      <p>${data.explanation}</p>
-    `;
-
     const imageContainer = document.getElementById('image-container');
     const title = document.getElementById('apod_title');
     const explanation = document.getElementById('apod_explanation');
