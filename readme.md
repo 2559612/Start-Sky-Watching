@@ -25,8 +25,7 @@ The `js/scripts.js` file contains javascript code to enable user interaction, us
 This contains images that were used in the production of the site. 
 
 ## references and image credits 
-
-(Copyright-free images are credited. Copyright images have their owners mentioned and have been used here under the doctrine of 'fair use'.)
+Copyright-free images are credited. Copyright images have their owners mentioned and have been used here under the doctrine of 'fair use'.
 
 The home/index page
 1. background picture: Photo credit: Philippe Donn (source: pexels.com)
